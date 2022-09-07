@@ -15,7 +15,7 @@ The Man command also describes how to use the switches (like -V (what does it do
 
 UBUNTU 
 
-echo <text> output the text we write between "".
+echo <text> outputs the text we write between after the command.
 
 whoami </> output the user id
 
