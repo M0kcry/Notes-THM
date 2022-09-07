@@ -10,7 +10,7 @@ Searching via Linux : searchsploit <name of program>
 
 MANUAL PAGES
 
-Man is a feature in Linux for searching tools command. It is used like this : man "<name of tool>" and will directly show the manual pages on the terminal.
+Man is a feature in Linux for searching tools command. It is used like this : man "[name of tool]" and will directly show the manual pages on the terminal.
 The Man command also describes how to use the switches (like -V (what does it do? etc..)).
 
 UBUNTU 
