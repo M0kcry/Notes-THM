@@ -31,7 +31,7 @@ Navigating in the file system :
 
 -find *.txt -> searchs for every .txt in the current directory. i.e. -find passwords.txt.
 
--grep ["IP adress"] [name of what he searched] i.e. -grep "123.5.4.5.5" access.log or -grep -r THM (-r is an option that allows to search in the sub-directories.
+-grep ["IP adress"] [name of what he searched] i.e. -grep "123.5.4.5.5" access.log or -grep -r THM (-r is an option that allows to search in the sub-directories.)
 
 SHELL OPERATORS
 
