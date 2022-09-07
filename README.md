@@ -25,7 +25,7 @@ Navigating in the file system :
  
 -cd [i.e. Pictures] change directory. Once in the desired directory type -ls to show everything in that directory.
  
--cat concatenate/output files/files content. By writing -cat in a file that contains some .txt or pictures, it will output it. Shortcut : cat /home/Ubuntu/Documents/.txt
+-cat concatenate/output files or files content. By writing -cat in a file that contains some .txt or pictures, it will output it. Shortcut : cat /home/Ubuntu/Documents/.txt
  
 -pwd prints the full name of the actual working directory.
 
