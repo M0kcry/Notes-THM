@@ -23,7 +23,7 @@ Navigating in the file system :
 
 -ls <see using man ls> lists infos about the files. It is possible to list the content of a directory /w going into it by doing -ls [full name of the directory].
  
--cd <i.e. Pictures> change directory. Once in the desired directory type -ls to show everything in that directory.
+-cd [i.e. Pictures] change directory. Once in the desired directory type -ls to show everything in that directory.
  
 -cat concatenate/output files/files content. By writing -cat in a file that contains some .txt or pictures, it will output it. Shortcut : cat /home/Ubuntu/Documents/.txt
  
@@ -31,7 +31,7 @@ Navigating in the file system :
 
 -find *.txt -> searchs for every .txt in the current directory. i.e. -find passwords.txt.
 
--grep <"IP adress"> <name of what he searched> i.e. -grep "123.5.4.5.5" access.log or -grep -r THM (-r is an option that allows to search in the sub-directories.
+-grep ["IP adress"] [name of what he searched] i.e. -grep "123.5.4.5.5" access.log or -grep -r THM (-r is an option that allows to search in the sub-directories.
 
 SHELL OPERATORS
 
