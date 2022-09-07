@@ -34,8 +34,8 @@ SHELL OPERATORS
 
 & : allows you to run a command in the background 
 && : allows you to combine commands in one line of code. i.e. command1 && command2 (command2 will only run if command1 was successful).
-> : redirector. i.e. echo hey > Welcome(file name). If then I do : cat Welcome -> it will show me "Hey". If a file named Welcome already existed, it would have been overwritten.
->> : same as > but doesn't replace the output, it copies it. Let's say that in the file "Welcome" the word "hey" is in. Now if I do echo >> Welcome the Welcome file now has in it : hey + hello (displayed under hey). So > replaces a file content and >> adds content to a file.
+">" : redirector. i.e. echo hey > Welcome(file name). If then I do : cat Welcome -> it will show me "Hey". If a file named Welcome already existed, it would have been overwritten.
+">>" : same as > but doesn't replace the output, it copies it. Let's say that in the file "Welcome" the word "hey" is in. Now if I do echo >> Welcome the Welcome file now has in it : hey + hello (displayed under hey). So > replaces a file content and >> adds content to a file.
 
 
 
