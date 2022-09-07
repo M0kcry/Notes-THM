@@ -17,7 +17,7 @@ UBUNTU
 
 echo <text> outputs the text we write between after the command.
 
-whoami </> output the user id
+whoami [/] output the user id
 
 Navigating in the file system :
 
