@@ -34,15 +34,17 @@ UBUNTU/LINUX COMMANDS
 Similarly to using cat, we can provide full file paths, i.e. directory1/directory2/note for all of these commands.
 
  
-echo <text> outputs the text we write between after the command.
+-echo <text> outputs the text we write between after the command.
 
-whoami [/] outputs the user id.
+-whoami [/] outputs the user id.
  
 -pwd prints the full name of the actual working directory.
 
 -find *.txt -> searchs for every .txt in the current directory. i.e. -find passwords.txt.
 
 -grep ["IP adress"] [name of what he searched] i.e. -grep "123.5.4.5.5" access.log or -grep -r THM (-r is an option that allows to search in the sub-directories.)
+ 
+-file [notf] determines the extension of this file, whether it's a .txt or else.
  
 
 SHELL OPERATORS
