@@ -31,7 +31,7 @@ The Man command also describes how to use the switches (like -V (what does it do
  
 -mv [notf you want to move] [where you want to move it]. Can also be used to rename a folder/file. i.e. move note2 note3. 
  
-**Similarly to using cat, we can provide full file paths, i.e. directory1/directory2/note for all of these commands.**
+**Similarly to using cat, we can provide full file paths, i.e. directory1/directory2/note for all of these commands above.**
 
 -echo <text> outputs the text we write between after the command.
 
