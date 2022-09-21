@@ -1,6 +1,6 @@
 # Notes-THM
 
-VULNERABILITY SEARCHING
+## VULNERABILITY SEARCHING
  
 A quick remembrering of the session : 
 
@@ -8,12 +8,12 @@ CVE.mitre is a good site to search for CVE codes. NVD is also a good place to lo
 
 Searching via Linux : searchsploit <name of program>
 
-MANUAL PAGES
+## MANUAL PAGES
 
  Man is a feature in Linux for searching tools command. It is used like this : man [name of tool] and will directly show the manual pages on the terminal.
 The Man command also describes how to use the switches (like -V (what does it do? etc..)).
 
-UBUNTU/LINUX COMMANDS
+## UBUNTU/LINUX COMMANDS
 
 -touch [name of the file]. Creates a file.
  
@@ -31,9 +31,8 @@ UBUNTU/LINUX COMMANDS
  
 -mv [notf you want to move] [where you want to move it]. Can also be used to rename a folder/file. i.e. move note2 note3. 
  
-Similarly to using cat, we can provide full file paths, i.e. directory1/directory2/note for all of these commands.
+**Similarly to using cat, we can provide full file paths, i.e. directory1/directory2/note for all of these commands.**
 
- 
 -echo <text> outputs the text we write between after the command.
 
 -whoami [/] outputs the user id.
@@ -47,7 +46,7 @@ Similarly to using cat, we can provide full file paths, i.e. directory1/director
 -file [notf] determines the extension of this file, whether it's a .txt or else.
  
 
-SHELL OPERATORS
+## SHELL OPERATORS
 
 & : allows you to run a command in the background 
  
