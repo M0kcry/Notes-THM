@@ -23,7 +23,7 @@ The Man command also describes how to use the switches (like -V (what does it do
  
 -cd [i.e. Pictures] change directory. Once in the desired directory type -ls to show everything in that directory.
  
--cat [] concatenate/output files or files content. By writing -cat in a file that contains some .txt or pictures, it will output it. Shortcut : cat /home/Ubuntu/Documents/*.txt
+-cat [File,etc...] concatenate/output files or files content. By writing -cat in a file that contains some .txt or pictures, it will output it. Shortcut : cat /home/Ubuntu/Documents/*.txt
  
 -rm [name of the file]. If you want to remove a directory the -R switch.
  
