@@ -37,9 +37,11 @@ The Man command also describes how to use the switches (like -V (what does it do
 
 -wget [URL or Breadcrumb trail]. Downloads a file from a specified URL.
  
--echo <text> outputs the text we write between after the command.
+-curl [URL]. curl is a tool for transferring data from or to a server.
+ 
+-echo [text]. outputs the text we write between after the command.
 
--whoami [/] outputs the user id.
+-whoami [/]. outputs the user id.
  
 -pwd prints the full name of the actual working directory.
 
