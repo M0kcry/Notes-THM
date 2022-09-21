@@ -27,12 +27,16 @@ The Man command also describes how to use the switches (like -V (what does it do
  
 -rm [name of the file]. If you want to remove a directory the -R switch.
  
+-scp [SOURCE][DESTINATION]. This command allows you to transfer files between two computers using the SSH protocol to provide both authentication and encryption. i.e. scp important.txt ubuntu@192.168.1.30:/home/ubuntu/transferred.txt would be the command to transfer from our pc to a remote one. This command can be reversed. It would be like : scp ubuntu@192.168.1.30:/home/ubuntu/documents.txt notes.txt (we copy a file from a remote pc to ours).
+ 
 -cp [name of the file(notf) you want to copy] [name of the copied file]
  
 -mv [notf you want to move] [where you want to move it]. Can also be used to rename a folder/file. i.e. move note2 note3. 
  
 **Similarly to using cat, we can provide full file paths, i.e. directory1/directory2/note for all of these commands above.**
 
+-wget [URL or Breadcrumb trail]. Downloads a file from a specified URL.
+ 
 -echo <text> outputs the text we write between after the command.
 
 -whoami [/] outputs the user id.
