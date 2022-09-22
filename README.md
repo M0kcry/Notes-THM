@@ -50,6 +50,9 @@ The Man command also describes how to use the switches (like -V (what does it do
 -grep ["IP adress"] [name of what he searched] i.e. -grep "123.5.4.5.5" access.log or -grep -r THM (-r is an option that allows to search in the sub-directories.)
  
 -file [notf] determines the extension of this file, whether it's a .txt or else.
+
+-crontab -e is a command to edit the crontab file (you can do it with Nano i.e.). crontab is simply a special file with formatting that is recognised by the cron process to execute each line step-by-step at the boot of the computer. Crontabs require 6 specific values -> min hour dayofthemonth(dom) mon(th) DoW cmd(command that will be executed).
+
  
 
 ## SHELL OPERATORS
@@ -64,6 +67,16 @@ The Man command also describes how to use the switches (like -V (what does it do
 
 So > replaces a file content and >> adds content to a file.
 
+## PACKAGE MANAGEMENT
+
+-add-apt-repository is a command that adds a repository to apt
+
+To start downloading programs (like Sublime Text 3) we first need to get the GPG key (security key provided by the creators of the program).
+
+So i.e. : wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - 
+The last part with sudo apt-key is a line to tell the server it can trust this key.
+
+Then let's create a file named sublime-text.list in /etc/apt/sources.list.d and enter the repository information.
 
 
 
