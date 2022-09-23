@@ -76,8 +76,10 @@ To start downloading programs (like Sublime Text 3) we first need to get the GPG
 So i.e. : wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - 
 The last part with sudo apt-key is a line to tell the server it can trust this key.
 
-Then let's create a file named sublime-text.list in /etc/apt/sources.list.d and enter the repository information.
+Then let's create a file named sublime-text.list in /etc/apt/sources.list.d and enter the repository information. (touch Sublime-text.list i.e.)
 
+After we have added this entry, we need to update apt to recognise this new entry -- this is done using the apt update command
 
+Once successfully updated, we can now proceed to install the software that we have trusted and added to apt using apt install sublime-text
 
 
