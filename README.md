@@ -86,7 +86,9 @@ Once successfully updated, we can now proceed to install the software that we ha
 
 ### NETWORKING TOPOLOGIES
  
-Star topology : *, this topology is at a higher cost than the others but have advantages such as : very scalable in nature (you can add devices easily), ..
+*Star topology* : *, this topology is at a higher cost than the others but have advantages such as : very scalable in nature (you can add devices easily), ..
 And disadvantages : If the centralised hardware that connects devices fails, these devices will no longer be able to send or receive data. Thankfully, these centralised hardware devices are often robust.
+ 
+*Bus topology* : 
  
 
