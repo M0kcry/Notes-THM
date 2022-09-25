@@ -1,6 +1,6 @@
-From Digital Ocean
+# From Digital Ocean
 
-Install MySQL: 
+## Install MySQL: 
 
 First let's use `sudo apt update` to get and be sure you've the latests updates.
 
