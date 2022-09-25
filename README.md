@@ -4,68 +4,109 @@
  
 A quick remembrering of the session : 
 
-CVE.mitre is a good site to search for CVE codes. NVD is also a good place to look at.
+[CVE.mitre](https://cve.mitre.org/) is a good site to search for `CVE` codes. [NVD](https://nvd.nist.gov/) is also a good place to look at.
 
-Searching via Linux : searchsploit <name of program>
-
+Searching via Linux : 
+```shell
+searchsploit <name of program>
+```
 ## MANUAL PAGES
 
- Man is a feature in Linux for searching tools command. It is used like this : man [name of tool] and will directly show the manual pages on the terminal.
-The Man command also describes how to use the switches (like -V (what does it do? etc..)).
+__Man__ is a feature in Linux for searching tools command. It is used as follow to output the manual pages on the terminal : 
+```shell
+man [name of tool] 
+```
+The `Man` command also describes how to use the switches (like -V (what does it do? etc..)).
 
-## UBUNTU/LINUX COMMANDS
+## LINUX COMMANDS
+```shell
+# Creates a file.
+touch [name of the file]
 
--touch [name of the file]. Creates a file.
+# Creates a directory.
+mkdir [name of the directory]
+
+# <see using man ls> lists infos about the files. 
+# It is possible to list the content of a directory /w going into it by doing -ls [full name of the directory].
+ls
  
--mkdir [name of the directory]. Creates a directory.
+# Changes directory. Once in the desired directory type -ls to show everything in that directory.
+cd /home/Mockry/Pictures
+cd .. # changes to the parent directory
+
+# Prints the full name of the actual working directory
+pwd
  
--ls <see using man ls> lists infos about the files. It is possible to list the content of a directory /w going into it by doing -ls [full name of the directory].
+# Concatenates/outputs files or files content. By writing -cat in a file that contains some .txt or pictures, it will output it. 
+cat /home/Ubuntu/test.txt
+cat /home/Ubuntu/Documents/*.txt # can display more than 1 file by using the wildcard
  
--cd [i.e. Pictures] change directory. Once in the desired directory type -ls to show everything in that directory.
+# Removes a file. Can also remove a directory by using the -R switch.
+rm test.txt
+rm -R /home/Ubuntu/Trash/
+
+# Transfers files between two computers using the SSH protocol
+scp important.txt ubuntu@192.168.1.30:/home/ubuntu/transferred.txt # transfer from our pc to a remote one
+scp ubuntu@192.168.1.30:/home/ubuntu/documents.txt notes.txt # copy a file from a remote pc to ours
+
+# Copies files. The first path or filename is the file to copy, and the second path is the destination
+cp original.txt /home/Ubuntu/Backup/backup.txt
  
--cat [File,etc...] concatenate/output files or files content. By writing -cat in a file that contains some .txt or pictures, it will output it. Shortcut : cat /home/Ubuntu/Documents/*.txt
- 
--rm [name of the file]. If you want to remove a directory the -R switch.
- 
--scp [SOURCE][DESTINATION]. This command allows you to transfer files between two computers using the SSH protocol to provide both authentication and encryption. i.e. scp important.txt ubuntu@192.168.1.30:/home/ubuntu/transferred.txt would be the command to transfer from our pc to a remote one. This command can be reversed. It would be like : scp ubuntu@192.168.1.30:/home/ubuntu/documents.txt notes.txt (we copy a file from a remote pc to ours).
- 
--cp [name of the file(notf) you want to copy] [name of the copied file]
- 
--mv [notf you want to move] [where you want to move it]. Can also be used to rename a folder/file. i.e. move note2 note3. 
+# Move a file to another location, often used for rename operation. Also works for folders/directories
+mv note2 note3 
  
 **Similarly to using cat, we can provide full file paths, i.e. directory1/directory2/note for all of these commands above.**
 
--wget [URL or Breadcrumb trail]. Downloads a file from a specified URL.
- 
--curl [URL]. curl is a tool for transferring data from or to a server.
- 
--echo [text]. outputs the text we write between after the command.
+# Downloads files from a URL
+wget https://ubuntu.org/Ubuntu_Server.iso
+wget https://ubuntu.org/Ubuntu_Server.iso -O /home/Ubuntu/Server.iso # -O specifies the output path for the downloaded file
 
--whoami [/]. outputs the user id.
+# Performs a web query. TO DO: complete page related to cURL, as this is such an IMPORTANT tool
+curl http://microsoft.com
+curl -k https://microsoft.com -vvv 
+curl -X HEADERS -vvv -k https://microsoft.com
  
--pwd prints the full name of the actual working directory.
+# Echo text to the tesrminal, usefull to redirect to other commands
+echo "Hello World"
+echo "Hello World" >> MyText.txt
 
--find *.txt -> searchs for every .txt in the current directory. i.e. -find passwords.txt.
+# Outputs the current logged in username
+whoami
 
--grep ["IP adress"] [name of what he searched] i.e. -grep "123.5.4.5.5" access.log or -grep -r THM (-r is an option that allows to search in the sub-directories.)
- 
--file [notf] determines the extension of this file, whether it's a .txt or else.
+# searchs for every .txt in the current directory. 
+find passwords.txt
+sudo find / -name passwords* # searches everywhere for a file starting with keyword passwords
 
--crontab -e is a command to edit the crontab file (you can do it with Nano i.e.). crontab is simply a special file with formatting that is recognised by the cron process to execute each line step-by-step at the boot of the computer. Crontabs require 6 specific values -> min hour dayofthemonth(dom) mon(th) DoW cmd(command that will be executed).
+# GREP to search for pattern in a file (filter output)
+cat access.log | grep "123.5.4.5"
 
- 
+# Determines the type of a given file, whether it's a .txt or else.
+file test.txt
+
+# Manage Contrab (special file with formatting that is recognised by the cron process to execute each line step-by-step at the boot of the computer.)
+crontab -e # edit the crontab file (you can do it with Nano i.e.).
+crontab -l # list current crontab entries
+
+# Help with generating contrabs : https://crontab-generator.org/
+```
 
 ## SHELL OPERATORS
+`&` : allows you to run a command in the background 
+```shell
+sudo systemctl restart apache2& 
+```
+`&&` : allows you to combine commands in one line of code. 
+command1 && command2 (command2 will only run if command1 was successful).
+```shell
+ip a && cat proof.txt && whoami
+```
+`>` : redirector. i.e. echo hey > Welcome(file name). If then I do : cat Welcome -> it will show me "Hey". If a file named Welcome already existed, it would have been overwritten. 
 
-& : allows you to run a command in the background 
- 
-&& : allows you to combine commands in one line of code. i.e. command1 && command2 (command2 will only run if command1 was successful).
- 
-">" : redirector. i.e. echo hey > Welcome(file name). If then I do : cat Welcome -> it will show me "Hey". If a file named Welcome already existed, it would have been overwritten.
- 
-">>" : same as > but doesn't replace the output, it copies it. Let's say that in the file "Welcome" the word "hey" is in. Now if I do echo >> Welcome the Welcome file now has in it : hey + hello (displayed under hey).
-
-So > replaces a file content and >> adds content to a file.
+`>>` : same as > but doesn't replace the output, it copies it. Let's say that in the file "Welcome" the word "hey" is in. Now if I do echo >> Welcome the Welcome file now has in it : hey + hello (displayed under hey).
+```shell
+cat file1.txt > file2.txt # overwrites file2's content with file1's
+cat file2.txt >> file1.txt # appends file2's content at the end of file1's (merge)
+```
 
 ## PACKAGE MANAGEMENT
 
