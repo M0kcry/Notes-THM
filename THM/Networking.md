@@ -107,6 +107,30 @@ This layer is one of the easiest layers to grasp. Put simply, this layer referen
 For example, ethernet cables connecting devices.
 
 ## Packets & Frames
+### What is it ?
+
+This process is called encapsulation. At this stage, it's safe to assume that when we are talking about anything IP addresses, we are talking about packets. When the encapsulating information is stripped away, we're talking about the frame itself.
+
+Packets are an efficient way of communicating data across networked devices such as those explained in Task 1. Because this data is exchanged in small pieces, there is less chance of bottlenecking occurring across a network than large messages being sent at once.
+
+### TCP/IP
+
+TCP (or Transmission Control Protocol for short) is another one of these rules used in networking.
+
+This protocol is very similar to the OSI model that we have previously discussed in room three of this module so far. The TCP/IP protocol consists of four layers and is arguably just a summarised version of the OSI model. These layers are:
+
+- Application
+- Transport
+- Internet
+- Network Interface
+
+One defining feature of TCP is that it is connection-based, which means that TCP must establish a connection between both a client and a device acting as a server before data is sent.
+
+Because of this, TCP guarantees that any data sent will be received on the other end. This process is named the Three-way handshake.
+
+TCP packets contain various sections of information known as headers that are added from encapsulation. Let's explain some of the crucial headers in the table below:
+
+![image](https://user-images.githubusercontent.com/112873207/192270035-9026a9f5-a722-41b3-bb7e-98366e7940a2.png)
 
 
 
