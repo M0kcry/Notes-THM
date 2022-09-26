@@ -179,6 +179,13 @@ We'll cover the two primary categories of firewalls in the table below:
 
 ![image](https://user-images.githubusercontent.com/112873207/192290411-dff588e6-d605-46ce-a5a8-58d3bf248d26.png)
 
+What layers of the OSI model do firewalls operate at? layer 3 and layer 4.
+
+### VPN - Basics
+
+
+
+
 
 
 
