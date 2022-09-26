@@ -152,7 +152,37 @@ While the standard rule for web data is port 80, a few other protocols have been
 
 ![image](https://user-images.githubusercontent.com/112873207/192274171-9211ed85-34ec-4a19-a0c0-5c99a45e8bf8.png)
 
-### Extending your network
+## Extending your network
+
+### Port Forwarding 
+
+It is easy to confuse port forwarding with the behaviours of a firewall (a technology we'll come on to discuss in a later task). However, at this stage, just understand that port forwarding opens specific ports (recall how packets work). In comparison, firewalls determine if traffic can travel across these ports (even if these ports are open by port forwarding).
+
+Port forwarding is configured at the router of a network.
+
+What is the name of the device that is used to configure port forwarding? **Router**
+
+### Firewalls 101
+
+A firewall is a device within a network responsible for determining what traffic is allowed to enter and exit. Think of a firewall as border security for a network. An administrator can configure a firewall to permit or deny traffic from entering or exiting a network based on numerous factors such as:
+
+- Where the traffic is coming from? (has the firewall been told to accept/deny traffic from a specific network?)
+- Where is the traffic going to? (has the firewall been told to accept/deny traffic destined for a specific network?)
+- What port is the traffic for? (has the firewall been told to accept/deny traffic destined for port 80 only?)
+- What protocol is the traffic using? (has the firewall been told to accept/deny traffic that is UDP, TCP or both?)
+
+Firewalls come in all shapes and sizes.
+
+From dedicated pieces of hardware (often found in large networks like businesses) that can handle a magnitude of data to residential routers (like at your home!) or software such as Snort, firewalls can be categorised into 2 to 5 categories.
+
+We'll cover the two primary categories of firewalls in the table below:
+
+![image](https://user-images.githubusercontent.com/112873207/192290411-dff588e6-d605-46ce-a5a8-58d3bf248d26.png)
+
+
+
+
+
 
 
 
