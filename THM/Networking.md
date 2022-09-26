@@ -132,6 +132,23 @@ TCP packets contain various sections of information known as headers that are ad
 
 ![image](https://user-images.githubusercontent.com/112873207/192270035-9026a9f5-a722-41b3-bb7e-98366e7940a2.png)
 
+The Three-way handshake communicates using a few special messages - the table below highlights the main ones:
+
+![image](https://user-images.githubusercontent.com/112873207/192270899-7f124963-360d-4ab7-a270-c32d656cc1b9.png)
+
+### UDP/IP
+
+The User Datagram Protocol (UDP) is another protocol that is used to communicate data between devices.
+
+UDP packets are much simpler than TCP packets and have fewer headers. However, both protocols share some standard headers, which are what is annotated in the table below:
+
+![image](https://user-images.githubusercontent.com/112873207/192273066-351a79ce-bc68-4722-964b-43a571543e5c.png)
+
+![image](https://user-images.githubusercontent.com/112873207/192273499-9c307936-54a6-4898-acdb-76c83d3f5142.png)
+
+
+
+
 
 
 
