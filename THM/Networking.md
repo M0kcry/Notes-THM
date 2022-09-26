@@ -55,7 +55,58 @@ The application layer of the OSI model is the layer that you will be most famili
 
 ### Layer 6 : Presentation
 
-This layer acts as a **translator** for data to and from the application layer (layer 7). The receiving computer will also understand data sent to a computer in one format destined for in another format. For example, when you send an email, the other user may have another email client to you, but the contents of the email will still need to display the same.
+This layer acts as a **translator** for data to and from the application layer (layer 7). The receiving computer will also understand data sent to a computer in one format destined for in another format. 
+
+For example, when you send an email, the other user may have another email client to you, but the contents of the email will still need to display the same.
+
+### Layer 5 : Session
+
+Once data has been correctly translated or formatted from the presentation layer (layer 6), the session layer (layer 5) will begin to create a connection to the other computer that the data is destined for. When a connection is established, a session is created. Whilst this connection is active, so is the session.
+
+The session layer will begin to divide up the data sent into smaller chunks of data and begin to send these chunks (packets) one at a time.
+
+### Layer 4 : Transport
+
+Layer 4 of the OSI model plays a vital part in transmitting data across a network and can be a little bit difficult to grasp. When data is sent between devices, it follows one of two different protocols that are decided based upon several factors:
+
+- TCP
+- UDP
+
+TCP stands for Transmission Control Protocol. This protocol reserves a constant connection between the two devices for the amount of time it takes for the data to be sent and received.
+
+Not only this, but TCP incorporates error checking into its design. Error checking is how TCP can guarantee that data sent from the small chunks in the session layer (layer 5) has then been received and reassembled in the same order.
+
+Now UDP stands for User Datagrem Protocol. This protocol is not nearly as advanced as its brother - the TCP protocol. It doesn't boast the many features offered by TCP, such as error checking and reliability.
+
+In fact, any data that gets sent via UDP is sent to the computer whether it gets there or not. There is no synchronisation between the two devices or guarantee; just hope for the best, and fingers crossed. 
+
+UDP is faster than TCP.
+
+UDP is useful in situations where there are small pieces of data being sent. For example, protocols used for discovering devices (ARP and DHCP) or larger files such as video streaming (where it is okay if some part of the video is pixelated. Pixels are just lost pieces of data!)
+
+### Layer 3 : Network 
+
+The third layer of the OSI model (network layer) is where the magic of routing & re-assembly of data takes place.
+
+Whilst some protocols at this layer determine exactly what is the "optimal" path that data should take to reach a device, we should only know about their existence at this stage of the networking module. 
+
+Briefly, these protocols include OSPF (Open Shortest Path First) and RIP (Routing Information Protocol).
+
+### Layer 2 : Data link
+
+The data link layer focuses on the physical addressing of the transmission.
+
+It receives a packet from the network layer (including the IP address for the remote computer) and adds in the physical MAC (Media Access Control) address of the receiving endpoint. 
+
+Inside every network-enabled computer is a Network Interface Card (NIC) which comes with a unique MAC address to identify it.
+
+### Layer 1 : Physical 
+
+This layer is one of the easiest layers to grasp. Put simply, this layer references the physical components of the hardware used in networking and is the lowest layer that you will find. Devices use electrical signals to transfer data between each other in a binary numbering system (1's and 0's).
+
+For example, ethernet cables connecting devices.
+
+## Packets & Frames
 
 
 
