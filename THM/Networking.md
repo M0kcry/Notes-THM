@@ -146,6 +146,11 @@ UDP packets are much simpler than TCP packets and have fewer headers. However, b
 
 ![image](https://user-images.githubusercontent.com/112873207/192273499-9c307936-54a6-4898-acdb-76c83d3f5142.png)
 
+### Port 101
+
+While the standard rule for web data is port 80, a few other protocols have been allocated a standard rule. Any port that is within 0 and 1024 (1,024) is known as a common port. Let's explore some of these other protocols below :
+
+![image](https://user-images.githubusercontent.com/112873207/192274171-9211ed85-34ec-4a19-a0c0-5c99a45e8bf8.png)
 
 
 
