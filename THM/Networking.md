@@ -41,3 +41,34 @@ Finally, what is the last DHCP packet that is sent to a device from a DHCP serve
 
 
 ## OSI MODEL
+### What is OSI Model ?
+
+The OSI model (or Open Systems Interconnection Model) is an absolute fundamental model used in networking
+
+The OSI model consists of seven layers which are illustrated in the diagram below. Each layer has a different set of responsibilities and is arranged from Layer 7 to Layer 1.
+
+At every individual layer that data travels through, specific processes take place, and pieces of information are added to this data. However, for now, we only need to understand that this process is called encapsulation.
+
+### Layer 7 : Application
+
+The application layer of the OSI model is the layer that you will be most familiar with. This familiarity is because the application layer is the layer in which protocols and rules are in place to determine how the user should interact with data sent or received.
+
+### Layer 6 : Presentation
+
+This layer acts as a **translator** for data to and from the application layer (layer 7). The receiving computer will also understand data sent to a computer in one format destined for in another format. For example, when you send an email, the other user may have another email client to you, but the contents of the email will still need to display the same.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
