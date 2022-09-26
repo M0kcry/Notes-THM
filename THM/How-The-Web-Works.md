@@ -60,3 +60,7 @@ TXT records are free text fields where any text-based data can be stored. TXT re
 
 
 Making a request with a command line : `nslookup --type=TXT website.thm`
+
+# HTTP in detail
+
+## What is HTTP(S)
