@@ -2,7 +2,7 @@
 
 ## What is DNS ?
 
-NS (Domain Name System) provides a simple way for us to communicate with devices on the internet without remembering complex numbers.
+DNS (Domain Name System) provides a simple way for us to communicate with devices on the internet without remembering complex numbers.
 
 ## Domain Hierarchy
 
@@ -64,3 +64,101 @@ Making a request with a command line : `nslookup --type=TXT website.thm`
 # HTTP in detail
 
 ## What is HTTP(S)
+
+HTTP (HyperText Transfer Protocol) is what's used whenever you view a website, developed by Tim Berners-Lee and his team between 1989-1991. 
+
+HTTP is the set of rules used for communicating with web servers for the transmitting of webpage data, whether that is HTML, Images, Videos, etc.
+
+What is HTTPS? (HyperText Transfer Protocol Secure)? HTTPS is the secure version of HTTP.
+
+## Requests and responses
+
+### What is URL (Uniforme Resources Locator)
+
+The below image shows what a URL looks like with all of its features (it does not use all features in every request).
+
+![image](https://user-images.githubusercontent.com/112873207/192329260-cd8c5423-f710-4ed2-937d-21e5b836580f.png)
+
+- Scheme: This instructs on what protocol to use for accessing the resource such as HTTP, HTTPS, FTP (File Transfer Protocol).
+
+- User: Some services require authentication to log in, you can put a username and password into the URL to log in.
+
+- Host: The domain name or IP address of the server you wish to access.
+
+### Making a request (with commands)
+
+![image](https://user-images.githubusercontent.com/112873207/192331539-b74bb778-1d3b-482f-b97e-1fe8ce5deb0e.png)
+
+Line 1: This request is sending the GET method ( more on this in the HTTP Methods task ), request the home page with / and telling the web server we are using HTTP protocol version 1.1.
+
+Line 2: We tell the web server we want the website tryhackme.com
+
+Line 3: We tell the web server we are using the Firefox version 87 Browser
+
+Line 4: We are telling the web server that the web page that referred us to this one is https://tryhackme.com
+
+Line 5: HTTP requests always end with a blank line to inform the web server that the request has finished.
+
+- Port: The Port that you are going to connect to, usually 80 for HTTP and 443 for HTTPS, but this can be hosted on any port between 1 - 65535.
+
+- Path: The file name or location of the resource you are trying to access.
+
+- Query String: Extra bits of information that can be sent to the requested path. For example, /blog?id=1 would tell the blog path that you wish to receive the blog article with the id of 1.
+
+- Fragment: This is a reference to a location on the actual page requested. This is commonly used for pages with long content and can have a certain part of the page directly linked to it, so it is viewable to the user as soon as they access the page.
+
+## HTTP Methods
+
+There are a lot of HTTP methods but we'll cover the most common ones, although mostly you'll deal with the GET and POST method.
+
+- GET Request : This is used for getting information from a web server.
+- POST : This is used for submitting data to the web server and potentially creating new records.
+- PUT : This is used for submitting data to a web server to update information.
+- DELETE : This is used for deleting information/records from a web server.
+
+## HTTP Status Code
+### HTTP Status Codes
+
+In the previous task, you learnt that when a HTTP server responds, the first line always contains a status code informing the client of the outcome of their request and also potentially how to handle it. These status codes can be broken down into 5 different ranges:
+
+![image](https://user-images.githubusercontent.com/112873207/192338429-008d074f-23e2-4a96-af1c-2c4ff3f2befe.png)
+
+### Common HTTP Status Codes
+
+There are a lot of different HTTP status codes and that's not including the fact that applications can even define their own, we'll go over the most common HTTP responses you are likely to come across: 
+
+![image](https://user-images.githubusercontent.com/112873207/192338866-393ae1c1-f174-4d01-b10b-918bb318e9ed.png)
+
+## Headers 
+
+Headers are additional bits of data you can send to the web server when making requests.
+
+Although no headers are strictly required when making a HTTP request, you’ll find it difficult to view a website properly.
+
+### Common Request Headers
+
+These are headers that are sent from the client (usually your browser) to the server.
+
+- Host: Some web servers host multiple websites so by providing the host headers you can tell it which one you require, otherwise you'll just receive the default website for the server.
+
+- User-Agent: This is your browser software and version number, telling the web server your browser software helps it format the website properly for your browser and also some elements of HTML, JavaScript and CSS are only available in certain browsers.
+
+- Content-Length: When sending data to a web server such as in a form, the content length tells the web server how much data to expect in the web request. This way the server can ensure it isn't missing any data.
+
+- Accept-Encoding: Tells the web server what types of compression methods the browser supports so the data can be made smaller for transmitting over the internet.
+
+### Common Response Headers
+
+These are the headers that are returned to the client from the server after a request.
+
+- Set-Cookie: Information to store which gets sent back to the web server on each request (see cookies task for more information).
+
+- Cache-Control: How long to store the content of the response in the browser's cache before it requests it again.
+
+- Content-Type: This tells the client what type of data is being returned, i.e., HTML, CSS, JavaScript, Images, PDF, Video, etc. Using the content-type header the browser then knows how to process the data.
+
+- Content-Encoding: What method has been used to compress the data to make it smaller when sending it over the internet.
+
+## Cookies
+
+
