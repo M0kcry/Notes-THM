@@ -183,30 +183,40 @@ What layers of the OSI model do firewalls operate at? layer 3 and layer 4.
 
 ### VPN - Basics
 
+A Virtual Private Network (or VPN for short) is a technology that allows devices on separate networks to communicate securely by creating a dedicated path between each other over the Internet (known as a tunnel). Devices connected within this tunnel form their own private network.
 
+![image](https://user-images.githubusercontent.com/112873207/192301539-c700e196-8b4d-4c91-9587-f735618f379c.png)
 
+The devices connected on Network #3 are still a part of Network #1 and Network #2 but also form together to create a private network (Network #3) that only devices that are connected via this VPN can communicate over.
 
+Let's cover some of the other benefits offered by a VPN in the table below:
 
+![image](https://user-images.githubusercontent.com/112873207/192302193-695d270e-48da-46cb-8970-d2578a6fe806.png)
 
+What VPN technology only encrypts & provides the authentication of data? PPP
 
+What VPN technology uses the IP framework? IPSec
 
+### LAN Networking Device
 
+What is a `Router` ? It's a router's job to connect networks and pass data between them. It does this by using routing (hence the name router!).
 
+Routers operate at Layer 3 of the OSI model. 
 
+Different protocols will decide what path should be taken, but factors include:
 
+- What path is the shortest?
 
+- What path is the most reliable?
 
+- Which path has the faster medium (e.g. copper or fibre)?
 
+What is a `Switch` ? A switch is a dedicated networking device responsible for providing a means of connecting to multiple devices. Switches can facilitate many devices (from 3 to 63) using Ethernet cables.
 
+Switches can operate at both layer 2 and layer 3 of the OSI model. However, these are exclusive in the sense that Layer 2 switches cannot operate at layer 3.
 
+These switches are solely responsible for sending frames to the correct device.
 
+Layer 3 switches are more sophisticated than layer 2, as they can perform some of the responsibilities of a router. Namely, these switches will send frames to devices (as layer 2 does) and route packets to other devices using the IP protocol. 
 
-
-
-
-
-
-
-
-
-
+A technology called VLAN (Virtual Local Area Network) allows specific devices within a network to be virtually split up.
