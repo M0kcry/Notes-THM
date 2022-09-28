@@ -78,5 +78,80 @@ We're continuing with Tools that are available through the System Configuration 
 
 The UAC settings can be changed or even turned off entirely (not recommended).
 
+What is the command to open User Account Control Settings? (The answer is the name of the .exe file, not the full path) UserAccountControlSettings.exe
+
+## Computer management
+
+The Computer Management (compmgmt) utility has three primary sections: 
+
+- System Tools
+- Storage
+- Services and Applications.
+
+### System tools
+
+Let's start with Task Scheduler. Per Microsoft, with Task Scheduler, we can create and manage common tasks that our computer will carry out automatically at the times we specify.
+
+#### Task scheduler 
+
+A task can run an application, a script, etc., and tasks can be configured to run at any point. 
+
+A task can run at log in or at log off. Tasks can also be configured to run on a specific schedule, for example, every five mins.
+
+To create a basic task, click on Create Basic Task under Actions (right pane).
+
+#### Event Viewer
+
+Event Viewer allows us to view events that have occurred on the computer. These records of events can be seen as an audit trail that can be used to understand the activity of the computer system. 
+
+Event Viewer has three panes.
+
+1. The pane on the left provides a hierarchical tree listing of the event log providers. (as shown in the image above)
+2. The pane in the middle will display a general overview and summary of the events specific to a selected provider.
+3. The pane on the right is the actions pane.
+
+There are five types of events that can be logged.
+
+![image](https://user-images.githubusercontent.com/112873207/192826289-de32d635-35cd-4c4b-8c0f-0a6c385de4c0.png)
+
+The standard logs are visible under Windows Logs
+
+![image](https://user-images.githubusercontent.com/112873207/192826520-4c785047-3fe0-4a5c-b3b8-b05a3c85ffc4.png)
+
+#### Shared Folders
+
+This is where you will see a complete list of shares and folders shared that others can connect to. 
+
+#### Performance
+
+In Performance, you'll see a utility called Performance Monitor (perfmon).
+
+**Perfmon** is used to view performance data either in real-time or from a log file. This utility is useful for troubleshooting performance issues on a computer system, whether local or remote. 
+
+**Device Manager** allows us to view and configure the hardware, such as disabling any hardware attached to the computer.
+
+#### Storage
+
+Under Storage is Windows Server Backup and Disk Management. We'll only look at Disk Management in this room.
+
+Disk Management is a system utility in Windows that enables you to perform advanced storage tasks.  Some tasks are:
+
+- Set up a new drive
+- Extend a partition
+- Shrink a partition
+- Assign or change a drive letter (ex. E:) 
+
+#### Service and Applications
+
+Recall from the previous task; a service is a special type of application that runs in the background. Here you can do more than enable and disable a service, such as view the Properties for the service. 
+
+WMI Control configures and controls the Windows Management Instrumentation (WMI) service.
+
+## System informations 
+
+We're continuing with Tools that are available through the System Configuration panel.
+
+What is the System Information (`msinfo32`) tool?
+
 
 
