@@ -193,8 +193,8 @@ The HTML structure (as shown in the screenshot) has the following components:
 - The <html> element is the root element of the HTML page - all other elements come after this element.
 - The <head> element contains information about the page (such as the page title)
 - The <body> element defines the HTML document's body; only content inside of the body is shown in the browser.
-- The <h1> element defines a large heading 
-- The <p> element defines a paragraph
+- The <h1 .> element defines a large heading 
+- The <p.> element defines a paragraph
 - There are many other elements (tags) used for different purposes. For example, there are tags for buttons (<button>), images (<img>), lists, and much more.
 
 Tags can contain attributes e.g. : <p attribute1="idk1" attribute2="idk2">.
