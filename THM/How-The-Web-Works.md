@@ -187,6 +187,7 @@ Websites are primarily created using:
 - JavaScript, implement complex features on pages using interactivity
 
 ![image](https://user-images.githubusercontent.com/112873207/192770847-712ee293-073b-46f4-9def-4dbe340f639f.png)
+
 The HTML structure (as shown in the screenshot) has the following components:
 
 - The <!DOCTYPE html> defines that the page is a HTML5 document. This helps with standardisation across different browsers and tells the browser to use HTML5 to interpret the page.
@@ -197,9 +198,9 @@ The HTML structure (as shown in the screenshot) has the following components:
 - The <p.> element defines a paragraph
 - There are many other elements (tags) used for different purposes. For example, there are tags for buttons (<button>), images (<img>), lists, and much more.
 
-Tags can contain attributes e.g. : <p attribute1="idk1" attribute2="idk2">.
+Tags can contain attributes e.g. : <.p attribute1="idk1" attribute2="idk2">.
   
-Tags can also have an id attribute which is unique to the element e.g. : <p id="yessir">
+Tags can also have an id attribute which is unique to the element e.g. : <.p id="yessir">
   
 ## JavaScript
   
