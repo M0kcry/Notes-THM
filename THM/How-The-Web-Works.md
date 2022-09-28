@@ -191,9 +191,9 @@ Websites are primarily created using:
 The HTML structure (as shown in the screenshot) has the following components:
 
 - The <!DOCTYPE html> defines that the page is a HTML5 document. This helps with standardisation across different browsers and tells the browser to use HTML5 to interpret the page.
-- The <html> element is the root element of the HTML page - all other elements come after this element.
-- The <head> element contains information about the page (such as the page title)
-- The <body> element defines the HTML document's body; only content inside of the body is shown in the browser.
+- The <html.> element is the root element of the HTML page - all other elements come after this element.
+- The <head.> element contains information about the page (such as the page title)
+- The <body.> element defines the HTML document's body; only content inside of the body is shown in the browser.
 - The <h1 .> element defines a large heading 
 - The <p.> element defines a paragraph
 - There are many other elements (tags) used for different purposes. For example, there are tags for buttons (<button>), images (<img>), lists, and much more.
