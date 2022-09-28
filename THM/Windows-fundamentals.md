@@ -47,7 +47,36 @@ To protect the local user of high elevated privileges hacking, Microsoft introdu
 
 Note: UAC (by default) doesn't apply for the built-in local administrator account. 
 
+# Windows fundamentals part 2
 
+##System configuration
+
+The System Configuration utility (MSConfig) is for advanced troubleshooting, and its main purpose is to help diagnose startup issues. 
+
+The utility has five tabs across the top. Below are the names for each tab. We will briefly cover each tab in this task. 
+
+1. General
+2. Boot
+3. Services
+4. Startup
+5. Tools
+
+1. In the General tab, we can select what devices and services for Windows to load upon boot. The options are: Normal, Diagnostic, or Selective. 
+
+2. In the Boot tab, we can define various boot options for the Operating System. 
+
+3. The Services tab lists all services configured for the system regardless of their state (running or stopped). A service is a special type of application that runs in the background.  
+
+4. In the Startup tab, you won't see anything interesting in the attached VM.  Below is a screenshot of the Startup tab for MSConfig from my local machine. 
+
+5. There is a list of various utilities (tools) in the Tools tab that we can run to configure the operating system further. There is a brief description of each tool to provide some insight into what the tool is for. 
+To run a tool, we can use the command to launch the tool via the run prompt, command prompt, or by clicking the Launch button. 
+
+## Change UAC settings
+
+We're continuing with Tools that are available through the System Configuration panel.
+
+The UAC settings can be changed or even turned off entirely (not recommended).
 
 
 
