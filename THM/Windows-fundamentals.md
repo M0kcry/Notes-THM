@@ -151,7 +151,63 @@ WMI Control configures and controls the Windows Management Instrumentation (WMI)
 
 We're continuing with Tools that are available through the System Configuration panel.
 
-What is the System Information (`msinfo32`) tool?
+msinfo32 : This tool gathers information about your computer and displays a comprehensive view of your hardware, system components, and software environment, which you can use to diagnose computer issues.
+
+The  information in System Summary is divided into three sections:
+
+- Hardware Resources
+- Components
+- Software Environment
+
+## Resource monitor (Resmon)
+
+As some of the other tools mentioned in this room, this utility is geared primarily to advanced users who need to perform advanced troubleshooting on the computer system.
+
+In the Overview tab, Resmon has four sections:
+
+- CPU
+- Disk
+- Network
+- Memory
+
+## Command prompt (cmd)
+
+In this task, we'll only cover a few commands that a computer user can run in the command prompt to obtain information about the computer system.
+
+Let's start with a few simple commands, such as `hostname` and `whoami`.
+
+- The command hostname will output the computer name.
+
+- The command whoami will output the name of the logged-in user.
+
+A command used often is ipconfig. This command will show the network address settings for the computer.
+
+The next command is `netstat`, this command will display protocol statistics and current TCP/IP network connections. 
+
+The `net` command is primarily used to manage network resources. This command supports sub-commands.
+
+If you type net without a sub-command, the output will show the syntax for the root command showing a few of the sub-commands you can use.
+
+If you wish to see the help information for `net user` , the command is `net help user`. 
+
+## Registry Editor
+
+This is a central hierarchical database used to store information necessary to configure the system for one or more users, applications, and hardware devices.
+
+The registry contains information that Windows continually references during operation, such as:
+
+- Profiles for each user
+- Applications installed on the computer and the types of documents that each can create
+- Property sheet settings for folders and application icons
+- What hardware exists on the system
+- The ports that are being used.
+
+**Warning**: The registry is for advanced computer users. Making changes to the registry can affect normal computer operations. 
+
+There are various ways to view/edit the registry. One way is to use the Registry Editor (`regedit`).
+
+
+
 
 
 
