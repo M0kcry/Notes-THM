@@ -204,3 +204,54 @@ Tags can also have an id attribute which is unique to the element e.g. : <.p id=
   
 ## JavaScript
   
+JavaScript (JS) is one of the most popular coding languages in the world and allows pages to become interactive
+
+Without JavaScript, a page would not have interactive elements and would always be static.  
+  
+To add JavaScript to your page you have 2 choices : 
+  
+- <scrpit.>
+- <script. src="/location/of/javascript_file.js"></script>
+
+## Sensitive Data Exposure
+
+Sensitive Data Exposure occurs when a website doesn't properly protect (or remove) sensitive clear-text information to the end-user; usually found in a site's frontend source code.
+  
+A password and/or an username can be found in the source code for example.
+  
+## HTML Injection
+
+HTML Injection is a vulnerability that occurs when unfiltered user input is displayed on the page.
+  
+If a website fails to sanitise user input (filter any "malicious" text that a user inputs into a website), and that input is used on the page, an attacker can inject HTML code into a vulnerable website.
+  
+The general rule is never to trust user input.
+  
+To prevent malicious input, the website developer should sanitise everything the user enters before using it in the JavaScript function; in this case, the developer could remove any HTML tags.
+  
+# Putting it all together
+
+## Other Components
+### Load Balancers
+
+Load balancers are used to balance a server activity. By that I mean, if a websites uses 3 servers (because this is a big site or there is a lot of traffic), the load balancers, once they receive a request, will chose where the request is going by using algorythms.
+  
+A couple of examples of these algorithms are round-robin, which sends it to each server in turn, or weighted, which checks how many requests a server is currently dealing with and sends it to the least busy server.
+  
+Load Balancers also perform a perdiodic Helath Check => If a server doesn't respond appropriately or doesn't respond, the load balancer will stop sending traffic until it responds appropriately again.
+  
+### CDN (Content Delivery Networks)
+  
+A CDN can be an excellent resource for cutting down traffic to a busy website. 
+  
+It allows you to host static files from your website, such a JavaScript, CSS, Images, Videos, and host them across thousands of servers all over the world. 
+  
+When a user requests one of the hosted files, the CDN works out where the nearest server is physically located and sends the request there instead of potentially the other side of the world.
+  
+
+
+  
+  
+  
+  
+  
