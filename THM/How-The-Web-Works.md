@@ -161,4 +161,45 @@ These are the headers that are returned to the client from the server after a re
 
 ## Cookies
 
+You've probably heard of cookies before, they're just a small piece of data that is stored on your computer. 
 
+Cookies are saved when you receive a "Set-Cookie" header from a web server. 
+
+Then every further request you make, you'll send the cookie data back to the web server. 
+
+Because HTTP is stateless (doesn't keep track of your previous requests), cookies can be used to remind the web server who you are, some personal settings for the website or whether you've been to the website before.
+
+# How Websites works
+
+## Websites
+
+There are two major components that make up a website:
+
+- Front End (Client-Side) - the way your browser renders a website.
+- Back End (Server-Side) - a server that processes your request and returns a response.
+
+## HTML
+
+Websites are primarily created using:
+
+- HTML (HyperText Markup Language), to build websites and define their structure
+- CSS, to make websites look pretty by adding styling options
+- JavaScript, implement complex features on pages using interactivity
+
+![image](https://user-images.githubusercontent.com/112873207/192770847-712ee293-073b-46f4-9def-4dbe340f639f.png)
+The HTML structure (as shown in the screenshot) has the following components:
+
+- The <!DOCTYPE html> defines that the page is a HTML5 document. This helps with standardisation across different browsers and tells the browser to use HTML5 to interpret the page.
+- The <html> element is the root element of the HTML page - all other elements come after this element.
+- The <head> element contains information about the page (such as the page title)
+- The <body> element defines the HTML document's body; only content inside of the body is shown in the browser.
+- The <h1> element defines a large heading 
+- The <p> element defines a paragraph
+- There are many other elements (tags) used for different purposes. For example, there are tags for buttons (<button>), images (<img>), lists, and much more.
+
+Tags can contain attributes e.g. : <p attribute1="idk1" attribute2="idk2">.
+  
+Tags can also have an id attribute which is unique to the element e.g. : <p id="yessir">
+  
+## JavaScript
+  
