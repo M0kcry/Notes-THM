@@ -256,8 +256,20 @@ It also checks if an excessive amount of web requests are being sent by utilisin
   
 If a request is deemed a potential attack, it will be dropped and never sent to the webserver.
 
+## How web servers work
   
+A web server is a software that listens for incoming connections and then utilises the HTTP protocol to deliver web content to its clients. The most common web server software you'll come across is Apache, Nginx, IIS and NodeJS.  
   
+### Virtual Hosts 
   
+Web servers can host multiple websites with different domain names; to achieve this, they use virtual hosts. 
+  
+The web server software checks the hostname being requested from the HTTP headers and matches that against its virtual hosts (virtual hosts are just text-based configuration files). 
+  
+If it finds a match, the correct website will be provided. If no match is found, the default website will be provided instead.
+  
+There's no limit to the number of different websites you can host on a web server.
+  
+
   
   
