@@ -206,8 +206,24 @@ The registry contains information that Windows continually references during ope
 
 There are various ways to view/edit the registry. One way is to use the Registry Editor (`regedit`).
 
+# Windows Fundamentals part 3
 
+## Device Security
 
+### TPM (Trusted Platform Module)
 
+This is a technology designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that is designed to carry out cryptographic operations.
 
+## Bitlocker 
 
+BitLocker Drive Encryption is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers.
+
+Coupled with TPM, Bitlokcer offers the best protection for your device.
+
+What must a user insert on computers that DO NOT have a TPM version 1.2 or later? **USB startup key**
+
+## VSS (Volume Shadow copy Service)
+
+Per Microsoft, the Volume Shadow Copy Service (VSS) coordinates the required actions to create a consistent shadow copy (also known as a snapshot or a point-in-time copy) of the data that is to be backed up. 
+
+***Note: Attackers use built-in Windows tools and utilities in an attempt to go undetected within the victim environment.  This tactic is known as Living Off The Land.***
