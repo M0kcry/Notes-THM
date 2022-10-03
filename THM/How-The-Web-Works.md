@@ -270,6 +270,11 @@ If it finds a match, the correct website will be provided. If no match is found,
   
 There's no limit to the number of different websites you can host on a web server.
   
-
+## Recognizing the type of IP
   
+ Private IP's list : 
+
+- Class A: 10.0. 0.0 to 10.255. 255.255.
+- Class B: 172.16. 0.0 to 172.31. 255.255.
+- Class C: 192.168. 0.0 to 192.168. 255.255.
   
