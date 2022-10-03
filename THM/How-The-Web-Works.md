@@ -278,3 +278,4 @@ There's no limit to the number of different websites you can host on a web serve
 - Class B: 172.16. 0.0 to 172.31. 255.255.
 - Class C: 192.168. 0.0 to 192.168. 255.255.
   
+If the IP is not listed above, it must be a public one.
