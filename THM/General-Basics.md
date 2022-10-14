@@ -1,8 +1,6 @@
 # Notes-THM
 
 ## VULNERABILITY SEARCHING
- 
-A quick remembrering of the session : 
 
 [CVE.mitre](https://cve.mitre.org/) is a good site to search for `CVE` codes. [NVD](https://nvd.nist.gov/) is also a good place to look at.
 
