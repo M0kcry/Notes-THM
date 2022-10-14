@@ -1,18 +1,15 @@
-# Notes-THM
-
-## VULNERABILITY SEARCHING
- 
-A quick remembrering of the session : 
 
 [CVE.mitre](https://cve.mitre.org/) is a good site to search for `CVE` codes. [NVD](https://nvd.nist.gov/) is also a good place to look at.
 
 Searching via Linux : 
+
 ```shell
 searchsploit <name of program>
 ```
 ## MANUAL PAGES
 
 __Man__ is a feature in Linux for searching tools command. It is used as follow to output the manual pages on the terminal : 
+
 ```shell
 man [name of tool] 
 ```
