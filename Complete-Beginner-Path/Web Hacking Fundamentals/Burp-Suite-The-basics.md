@@ -2,7 +2,7 @@ Burp Suite Community - this room was created by ![Capture](https://user-images.g
 
 # Features of Burp Community
 
-Here's some described features : 
+## Here's some interesting described features : 
 
 ![image](https://user-images.githubusercontent.com/112873207/220860549-aaddbc12-3bb2-40f0-a93e-85256172cf4e.png)
 
