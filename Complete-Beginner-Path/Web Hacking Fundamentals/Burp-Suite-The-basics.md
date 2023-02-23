@@ -6,4 +6,28 @@ Burp Suite Community - this room was created by ![Capture](https://user-images.g
 
 ![image](https://user-images.githubusercontent.com/112873207/220860549-aaddbc12-3bb2-40f0-a93e-85256172cf4e.png)
 
+# Installation 
+
+If you don't use AttackBox follow this lead : https://tryhackme.com/room/burpsuitebasics 
+
+# the Dashboard 
+
+![image](https://user-images.githubusercontent.com/112873207/220884274-9ef5852a-dae6-4773-917a-87b12c4822f9.png)
+
+![image](https://user-images.githubusercontent.com/112873207/220884325-1161aa2e-c09c-46df-a5ec-8c5f39eace29.png)
+
+# Navigation
+
+![image](https://user-images.githubusercontent.com/112873207/220885332-dff3b946-a341-4c8f-9219-30e0cba251dc.png)
+
+# Options 
+
+![image](https://user-images.githubusercontent.com/112873207/220885995-9c970101-4c5b-4cf5-b236-5bc613c106c7.png)
+
+
+
+
+
+
+
 
