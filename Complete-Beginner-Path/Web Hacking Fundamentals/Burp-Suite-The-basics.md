@@ -28,6 +28,27 @@ If you don't use AttackBox follow this lead : https://tryhackme.com/room/burpsui
 
 ![image](https://user-images.githubusercontent.com/112873207/220995924-2ebb8b30-aa18-4c9c-a848-c55627ffa331.png)
 
+# Introduction to Burp Proxy
+
+![image](https://user-images.githubusercontent.com/112873207/220996104-26934a6e-be7a-4703-bdfd-70de30dc1bde.png)
+
+![image](https://user-images.githubusercontent.com/112873207/220996326-f3861152-e6c6-4404-98e5-3f30c3a41bd0.png)
+
+![image](https://user-images.githubusercontent.com/112873207/221000548-94f3e3c4-6890-40b4-815c-2090d0499de1.png)
+
+# Connecting through the proxy (FoxyProxy)
+
+![image](https://user-images.githubusercontent.com/112873207/221010767-232982e9-7d39-4352-a563-5acadeb37c07.png)
+
+![image](https://user-images.githubusercontent.com/112873207/221011226-2617b727-0487-430f-a127-10e75d0f1aef.png)
+
+# Proxying HTTPS
+
+
+
+
+
+
 
 
 
