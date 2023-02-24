@@ -44,6 +44,31 @@ If you don't use AttackBox follow this lead : https://tryhackme.com/room/burpsui
 
 # Proxying HTTPS
 
+If you use THM's Attackbox you don't need to see this part. If you're not then refer to the room here : https://tryhackme.com/room/burpsuitebasics
+
+# The Burp Suite Browser
+
+![image](https://user-images.githubusercontent.com/112873207/221154587-8d8795f3-aa0c-4a3b-81c5-267790154191.png)
+
+# Scoping and Targeting
+
+![image](https://user-images.githubusercontent.com/112873207/221156381-07396f8e-e9df-45f2-b585-195c255ae77f.png)
+
+![image](https://user-images.githubusercontent.com/112873207/221157434-03ff747b-e9bb-43ea-9465-f462dc5bab3d.png)
+
+To be able to see your target in the left column, you must forward it before !
+
+![image](https://user-images.githubusercontent.com/112873207/221157735-a5626cf9-1e76-49fc-b1b0-38315335e9a3.png)
+
+# Site Map and Issue Definitions
+
+![image](https://user-images.githubusercontent.com/112873207/221160075-4aae55e9-515c-4a25-b3f2-2054f68182d2.png)
+
+# Example Attack
+
+Follow the detailled task here : https://tryhackme.com/room/burpsuitebasics
+
+
 
 
 
