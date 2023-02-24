@@ -66,7 +66,7 @@ To be able to see your target in the left column, you must forward it before !
 
 # Example Attack
 
-Follow the detailled task here : https://tryhackme.com/room/burpsuitebasics
+Follow the detailed task here : https://tryhackme.com/room/burpsuitebasics
 
 
 
