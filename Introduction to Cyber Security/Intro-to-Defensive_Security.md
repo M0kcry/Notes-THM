@@ -35,6 +35,8 @@ In Linux there is : `exiftool [nameimage.jgp]`
 
 If you don't already have it installed on linux you can type : `sudo apt install libimage-exiftool-perl` 
 
+# Intro to Security Operations
+
 
 
 
