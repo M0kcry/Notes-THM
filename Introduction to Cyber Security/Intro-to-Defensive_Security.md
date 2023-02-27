@@ -35,9 +35,23 @@ In Linux there is : `exiftool [nameimage.jgp]`
 
 If you don't already have it installed on linux you can type : `sudo apt install libimage-exiftool-perl` 
 
-# Intro to Security Operations
+# Security Operations
 
+## Intro to SOC
 
+A security operation center (SOC) is a team of IT security professionals tasked with monitoring a company’s network and systems 24 hours a day, seven days a week. 
+
+Their purpose of monitoring is to:
+
+![image](https://user-images.githubusercontent.com/112873207/221599913-d6ccac8e-56f4-4451-83d8-be232c18bbc4.png)
+
+## Elements of SOC 
+
+In this section we'll talk about : 
+
+- Example data sources that the SOC relies on
+- The services that the SOC provides
+- An example scenario.
 
 
 
