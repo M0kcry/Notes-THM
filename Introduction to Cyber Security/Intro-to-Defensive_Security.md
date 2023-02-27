@@ -71,6 +71,28 @@ SOC services include reactive and proactive services in addition to other servic
 
 Other services by the SOC include **cyber security training**. Many data breaches and intrusions can be avoided by raising users’ security awareness and arming them with solid security training.
 
+### Example Scenario
+
+One important role is **SOC Analyst** which is reponsible of network security monitoring and log management.
+
+Let's consider the following scenario : 
+
+![image](https://user-images.githubusercontent.com/112873207/221607103-61f40132-33e0-4434-84dc-1b4be446f6cd.png)
+
+## Practical example 
+
+Refer to the room for the complete exercise. 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
