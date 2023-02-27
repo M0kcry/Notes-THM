@@ -29,6 +29,12 @@ To read PDF files with Kali Linux we can use `pdfinfo [filename.pdf]` (if you do
 ![image](https://user-images.githubusercontent.com/112873207/221592248-707ae832-2305-4b85-87d4-d92584ba8914.png)
 ![image](https://user-images.githubusercontent.com/112873207/221592584-e37fcf06-7eeb-4e33-8e7c-9b731904f569.png)
 
+There are a lot of tools that allows you to read the EXIF data of an image.
+
+In Linux there is : `exiftool [nameimage.jgp]` 
+
+If you don't already have it installed on linux you can type : `sudo apt install libimage-exiftool-perl` 
+
 
 
 
