@@ -51,7 +51,13 @@ In this section we'll talk about :
 
 - Example data sources that the SOC relies on
 - The services that the SOC provides
-- An example scenario.
+- An example scenario
+
+### Data sources
+
+![image](https://user-images.githubusercontent.com/112873207/221602642-6b0b11f0-ebbb-41df-8e0e-954acc768334.png)
+
+
 
 
 
