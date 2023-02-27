@@ -27,6 +27,7 @@ Refer to the room for the complete exercise.
 To read PDF files with Kali Linux we can use `pdfinfo [filename.pdf]` (if you don't have it installed you can use `sudo apt install poppler-utils`
 
 ![image](https://user-images.githubusercontent.com/112873207/221592248-707ae832-2305-4b85-87d4-d92584ba8914.png)
+![image](https://user-images.githubusercontent.com/112873207/221592584-e37fcf06-7eeb-4e33-8e7c-9b731904f569.png)
 
 
 
