@@ -60,4 +60,24 @@ There are 3 common weaknesses :
 
 Refer to the room to follow the attack exercise
 
+# Network Security
+
+## Introduction
+
+![image](https://user-images.githubusercontent.com/112873207/221568721-bccb12e3-52bc-49cd-a93e-40876e654bd8.png)
+
+![image](https://user-images.githubusercontent.com/112873207/221568786-4625d05a-4703-45f0-890a-404a2e105c37.png)
+
+![image](https://user-images.githubusercontent.com/112873207/221569456-39f7000d-9058-4d50-a7d1-eae472dea247.png)
+
+## Methodology
+
+![image](https://user-images.githubusercontent.com/112873207/221570638-cd8d1ad1-a8e4-416a-a41f-0e6823528f38.png)
+
+## Practical example 
+
+Refer to the room to see the full exercise.
+
+
+
 
