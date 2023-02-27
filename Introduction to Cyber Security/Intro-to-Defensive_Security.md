@@ -69,7 +69,7 @@ SOC services include reactive and proactive services in addition to other servic
 
 ![image](https://user-images.githubusercontent.com/112873207/221606007-810a8227-837a-440b-b5c9-ab2852e5ff2c.png)
 
-Other services by the SOC include **cyber security training** . Many data breaches and intrusions can be avoided by raising users’ security awareness and arming them with solid security training.
+Other services by the SOC include **cyber security training**. Many data breaches and intrusions can be avoided by raising users’ security awareness and arming them with solid security training.
 
 
 
