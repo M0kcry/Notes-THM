@@ -95,6 +95,37 @@ Instead we will be using the online tool: Crackstation. This website is extremel
 
 ![image](https://user-images.githubusercontent.com/112873207/221870725-bb168cc6-2836-4f52-a8ee-91bb55af22b4.png)
 
+# Severity 4 : XML (Extensible Markp Language) External Entity (XXE)
+
+An XML External Entity (XXE) attack is a vulnerability that abuses features of XML parsers/data. It often allows an attacker to interact with any backend or external systems that the application itself can access and can allow the attacker to read the file on that system. They can also cause Denial of Service (DoS) attack or could use XXE to perform Server-Side Request Forgery (SSRF) inducing the web application to make requests to other applications. XXE may even enable port scanning and lead to remote code execution.
+
+![image](https://user-images.githubusercontent.com/112873207/221895351-3f0f8890-7fee-4353-ae6c-31bb82a56345.png)
+
+## Now what is XML ?
+
+XML (eXtensible Markup Language) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. It is a markup language used for storing and transporting data. 
+
+## Why do we use it ? 
+
+1. XML is platform-independent and programming language independent, thus it can be used on any system and supports the technology change when that happens.
+
+2. The data stored and transported using XML can be changed at any point in time without affecting the data presentation.
+
+3. XML allows validation using DTD and Schema. This validation ensures that the XML document is free from any syntax error.
+
+4. XML simplifies data sharing between various systems because of its platform-independent nature. XML data doesn’t require any conversion when transferred between different systems.
+
+Every XML document mostly starts with what is known as XML Prolog ; `<?xml version="1.0" encoding="UTF-8"?>`
+
+This line is not compulsory to use but it is considered a `good practice` to put that line in all your XML documents.
+
+![image](https://user-images.githubusercontent.com/112873207/221897592-35c16c56-3078-463c-bc8b-55480e372c14.png)
+
+In the above example the `<mail>` is the ROOT element of that document and `<to>`, `<from>`, `<subject>`, `<text>` are the children elements. If the XML document doesn't have any root element then it would be considered **wrong or invalid** XML doc.
+  
+![image](https://user-images.githubusercontent.com/112873207/221898286-4723a447-1118-4d72-8790-2f18ce839643.png)
+
+![image](https://user-images.githubusercontent.com/112873207/221898667-fcb64a30-b6c7-487a-99ca-b1d26572c3e2.png)
 
 
 
