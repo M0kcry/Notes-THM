@@ -53,6 +53,8 @@ If an attacker is able to find flaws in an authentication mechanism, they would 
 - **Use of weak credentials**: web applications should set strong password policies. If applications allow users to set passwords such as ‘password1’ or common passwords, then an attacker is able to easily guess them and access user accounts. They can do this without brute forcing and without multiple attempts.
 - **Weak Session Cookies**: Session cookies are how the server keeps track of users. If session cookies contain predictable values, an attacker can set their own session cookies and access users’ accounts. 
 
+![image](https://user-images.githubusercontent.com/112873207/221824696-0ca8d1d1-2eb3-44c4-a30c-627573a42b4f.png)
+
 
 
 
