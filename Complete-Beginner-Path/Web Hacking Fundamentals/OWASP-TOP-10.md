@@ -27,7 +27,21 @@ Some variants of netcat don't support the -e option. There is a list of the diff
 
 Refer to the room for the complete exercise. 
 
+### What is active command injection ?
 
+**Blind** Command Injection occurs when the system command made to the server does not return the response to the user in an HTML doc. 
+
+**Active** Command Injection, in the other hand, will return the response to the user.
+
+### Ways to detect Active Command Injection 
+
+![image](https://user-images.githubusercontent.com/112873207/221799898-43229b3d-ef92-4209-93dc-305fcc4d158e.png)
+
+### Linux Interesting Commands
+
+- Type `getent passwd [user]` and press submit to obtain the user’s shell. The 7th field of an entry in etc/passwd file is the home directory of the user (user’s     shell).
+
+- Type `lsb_release -a` to check the ubuntu version.
 
 
 
