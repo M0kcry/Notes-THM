@@ -59,6 +59,30 @@ If an attacker is able to find flaws in an authentication mechanism, they would 
 
 Refer to the room to see the complete exercise.
 
+# Severity 3 : Data Exposure
+
+## Intro 
+
+When a webapp accidentally divulges sensitive data, we refer to it as "Sensitive Data Exposure". This is often data directly linked to customers (e.g. names, dates-of-birth, financial information, etc), but could also be more technical information, such as usernames and passwords. 
+
+At more complex levels this often involves techniques such as a "Man in The Middle Attack", whereby the attacker would force user connections through a device which they control, then take advantage of weak encryption on any transmitted data to gain access to the intercepted information (if the data is even encrypted in the first place...). Of course, many examples are much simpler, and vulnerabilities can be found in web apps which can be exploited without any advanced networking knowledge. Indeed, in some cases, the sensitive data can be found directly on the webserver itself...
+
+## Supporting Material 
+
+The most common way to store data is in a database which can be managed by SQL. 
+
+Also, this is common to see database set up on dedicated server such as MySQL or MariaDB but data can also be stored as files (called flat-file and stored as a single file in the computer).
+
+Flat-files are simpler to set up than a complete database server.
+
+As mentioned previously, flat-file databases are stored as a file on the disk of a computer. Usually this would not be a problem for a webapp, but what happens if the database is stored underneath the root directory of the website (i.e. one of the files that a user connecting to the website is able to access)? Well, we can download it and query it on our own machine, with full access to everything in the database. Sensitive Data Exposure indeed!
+
+The most common (and simplest) format of flat-file database is an sqlite database. These can be interacted with in most programming languages, and have a dedicated client for querying them on the command line. This client is called "sqlite3", and is installed by default on Kali.
+
+To access it we use: `sqlite3 <database-name>`
+
+
+
 
 
 
