@@ -91,7 +91,11 @@ We saw how to query an SQLite database for sensitive data. We found a collection
 
 When it comes to hash cracking, Kali comes pre-installed with various tools -- if you know how to use these then feel free to do so; however, they are outwith the scope of this material.
 
-![image](https://user-images.githubusercontent.com/112873207/221870379-e2cb0fe6-39a2-4bbf-bf07-8e90528830eb.png)
+Instead we will be using the online tool: Crackstation. This website is extremely good at cracking weak password hashes. For more complicated hashes we would need more sophisticated tools; however, all of the crackable password hashes used in today's challenge are weak MD5 hashes, which Crackstation should handle very nicely indeed.
+
+![image](https://user-images.githubusercontent.com/112873207/221870725-bb168cc6-2836-4f52-a8ee-91bb55af22b4.png)
+
+
 
 
 
