@@ -43,5 +43,9 @@ Refer to the room for the complete exercise.
 
 - Type `lsb_release -a` to check the ubuntu version.
 
+# Severity 2 : Broken Authentication
+
+*Authentication and session management constitute core components of modern web applications. Authentication allows users to gain access to web applications by verifying their identities. The most common form of authentication is using a username and password mechanism. A user would enter these credentials, the server would verify them. If they are correct, the server would then provide the users’ browser with a session cookie. A session cookie is needed because web servers use HTTP(S) to communicate which is stateless. Attaching session cookies means that the server will know who is sending what data. The server can then keep track of users' actions.* 
+
 
 
