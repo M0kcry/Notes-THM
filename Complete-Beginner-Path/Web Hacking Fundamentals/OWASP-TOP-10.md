@@ -55,6 +55,10 @@ If an attacker is able to find flaws in an authentication mechanism, they would 
 
 ![image](https://user-images.githubusercontent.com/112873207/221824696-0ca8d1d1-2eb3-44c4-a30c-627573a42b4f.png)
 
+## Practical example 
+
+Refer to the room to see the complete exercise.
+
 
 
 
