@@ -87,7 +87,11 @@ we won't necessarily know what each column means unless we look at the table inf
 
 We can use `PRAGMA table_info(customers)` ; to see the table information, then we can use `SELECT * FROM customers` ; to dump the information from the table.
 
+We saw how to query an SQLite database for sensitive data. We found a collection of password hashes, one for each user. In this task we will briefly cover how to crack these.
 
+When it comes to hash cracking, Kali comes pre-installed with various tools -- if you know how to use these then feel free to do so; however, they are outwith the scope of this material.
+
+![image](https://user-images.githubusercontent.com/112873207/221870379-e2cb0fe6-39a2-4bbf-bf07-8e90528830eb.png)
 
 
 
