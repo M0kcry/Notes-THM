@@ -81,7 +81,11 @@ The most common (and simplest) format of flat-file database is an sqlite databas
 
 To access it we use: `sqlite3 <database-name>`
 
+we can see the tables in the database by using the `.tables command` 
 
+we won't necessarily know what each column means unless we look at the table information. 
+
+We can use `PRAGMA table_info(customers)` ; to see the table information, then we can use `SELECT * FROM customers` ; to dump the information from the table.
 
 
 
