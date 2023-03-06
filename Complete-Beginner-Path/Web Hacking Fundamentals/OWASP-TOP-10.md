@@ -111,7 +111,7 @@ XML (eXtensible Markup Language) is a markup language that defines a set of rule
 
 2. The data stored and transported using XML can be changed at any point in time without affecting the data presentation.
 
-3. XML allows validation using DTD and Schema. This validation ensures that the XML document is free from any syntax error.
+3. XML allows validation using DTD (Document Type Definition) and Schema. This validation ensures that the XML document is free from any syntax error.
 
 4. XML simplifies data sharing between various systems because of its platform-independent nature. XML data doesn’t require any conversion when transferred between different systems.
 
@@ -126,6 +126,8 @@ In the above example the `<mail>` is the ROOT element of that document and `<to>
 ![image](https://user-images.githubusercontent.com/112873207/221898286-4723a447-1118-4d72-8790-2f18ce839643.png)
 
 ![image](https://user-images.githubusercontent.com/112873207/221898667-fcb64a30-b6c7-487a-99ca-b1d26572c3e2.png)
+
+# Security 5 : Broken Access Control 
 
 
 
