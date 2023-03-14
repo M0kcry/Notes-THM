@@ -182,8 +182,31 @@ Specifically, this malicious code leverages the legitimate serialization and des
 
 ![image](https://user-images.githubusercontent.com/112873207/225045637-ba835616-d030-4304-b048-519b4654126c.png)
 
+![image](https://user-images.githubusercontent.com/112873207/225048973-24dfc799-e14b-41e1-9618-cf6406a4ee4d.png)
 
+## Objects 
 
+![image](https://user-images.githubusercontent.com/112873207/225049127-0c7b232c-1c57-43de-bd30-af2f96b0ddbd.png)
+
+## Deserializations
+
+*Learning is best done through analogies*
+
+A Tourist approaches you in the street asking for directions. They're looking for a local landmark and got lost. Unfortunately, English isn't their strong point and nor do you speak their dialect either. What do you do? You draw a map of the route to the landmark because pictures cross language barriers, they were able to find the landmark. Nice! You've just serialised some information, where the tourist then deserialised it to find the landmark.µ
+
+*Continued*
+
+Serialisation is the process of converting objects used in programming into simpler, compatible formatting for transmitting between systems or networks for further processing or storage.
+
+Alternatively, deserialisation is the reverse of this; converting serialised information into their complex form - an object that the application will understand.
+
+*What does this means ?*
+
+![image](https://user-images.githubusercontent.com/112873207/225050378-5cfbe6db-37bb-40d5-b616-196f07da559e.png)
+
+*How can we leverage this?*
+
+Simply, insecure deserialization occurs when data from an untrusted party (I.e. a hacker) gets executed because there is no filtering or input validation; the system assumes that the data is trustworthy and will execute it no holds barred.
 
 
 
