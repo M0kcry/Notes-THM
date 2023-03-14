@@ -144,5 +144,11 @@ Security misconfigurations include:
 - Not using HTTP security headers, or revealing too much detail in the Server: HTTP header
 - This vulnerability can often lead to more vulnerabilities, such as default credentials giving you access to sensitive data, XXE or command injection on admin pages.
 
+## Default Password 
 
+Specifically, this VM focusses on default passwords. These are a specific example of a security misconfiguration. You could, and should, change any default passwords but people often don't.
+
+It's particularly common in embedded and Internet of Things devices, and much of the time the owners don't change these passwords.
+
+It's easy to imagine the risk of default credentials from an attacker's point of view. Being able to gain access to admin dashboards, services designed for system administrators or manufacturers, or even network infrastructure could be incredibly useful in attacking a business. From data exposure to easy RCE, the effects of default credentials can be severe.
 
