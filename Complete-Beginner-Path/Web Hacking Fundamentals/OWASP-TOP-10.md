@@ -127,14 +127,22 @@ In the above example the `<mail>` is the ROOT element of that document and `<to>
 
 ![image](https://user-images.githubusercontent.com/112873207/221898667-fcb64a30-b6c7-487a-99ca-b1d26572c3e2.png)
 
-# Security 5 : Broken Access Control 
+# Severity 5 : Broken Access Control 
 
 ![image](https://user-images.githubusercontent.com/112873207/223431549-11ae28df-29f4-446c-9418-66369412832c.png)
 
-
 ![image](https://user-images.githubusercontent.com/112873207/223431421-74c5e62d-9944-4bbd-8ac8-ac747c2f0071.png)
 
+# Severity 6 : Security Misconfiguration
 
+Security misconfigurations include:
+
+- Poorly configured permissions on cloud services, like S3 buckets
+- Having unnecessary features enabled, like services, pages, accounts or privileges
+- Default accounts with unchanged passwords
+- Error messages that are overly detailed and allow an attacker to find out more about the system
+- Not using HTTP security headers, or revealing too much detail in the Server: HTTP header
+- This vulnerability can often lead to more vulnerabilities, such as default credentials giving you access to sensitive data, XXE or command injection on admin pages.
 
 
 
