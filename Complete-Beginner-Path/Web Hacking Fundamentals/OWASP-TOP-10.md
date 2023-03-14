@@ -170,7 +170,17 @@ A web application is vulnerable to XSS if it uses unsanitized user input. XSS is
 
 XSS-Payloads.com (http://www.xss-payloads.com/) is a website that has XSS related Payloads, Tools, Documentation and more. You can download XSS payloads that take snapshots from a webcam or even get a more capable port and network scanner.
 
+# Severity 8 : Insecure Deserialization
 
+"Insecure Deserialization is a vulnerability which occurs when untrusted data is used to abuse the logic of an application" (Acunetix., 2017)
+
+Simply, insecure deserialization is replacing data processed by an application with malicious code; allowing anything from DoS (Denial of Service) to RCE (Remote Code Execution) that the attacker can use to gain a foothold in a pentesting scenario.
+
+Specifically, this malicious code leverages the legitimate serialization and deserialization process used by web applications.
+
+**OWASP rank this vulnerability as 8 out of 10 because of the following reasons:**
+
+![image](https://user-images.githubusercontent.com/112873207/225045637-ba835616-d030-4304-b048-519b4654126c.png)
 
 
 
