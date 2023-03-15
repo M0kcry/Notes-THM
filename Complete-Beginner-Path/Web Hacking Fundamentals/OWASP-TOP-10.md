@@ -264,7 +264,13 @@ When web applications are set up, every action performed by the user should be l
 
 - risk of further attacks: without logging, the presence of an attacker may be undetected. This could allow an attacker to launch further attacks against web application owners by stealing credentials, attacking infrastructure and more.
 
+The information stored in logs should include:
 
+- HTTP status codes
+- Time Stamps
+- Usernames
+- API endpoints/page locations
+- IP addresses
 
 
 
