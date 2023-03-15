@@ -272,6 +272,7 @@ The information stored in logs should include:
 - API endpoints/page locations
 - IP addresses
 
+![image](https://user-images.githubusercontent.com/112873207/225362432-6ec7b231-4b58-499a-acb5-eefb6e14d84d.png)
 
 
 
