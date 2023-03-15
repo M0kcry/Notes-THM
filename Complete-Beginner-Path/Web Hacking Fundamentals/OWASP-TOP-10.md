@@ -240,6 +240,38 @@ As you can see this would be quite devastating, because it requires very little 
 
 Hence, why OWASP has rated this a 3(meaning high) on the prevalence scale, it is incredibly easy for a company to miss an update for an application.
 
+## Exploit
+
+![image](https://user-images.githubusercontent.com/112873207/225322313-4f84732f-3239-496a-9089-962f232106ca.png)
+
+![image](https://user-images.githubusercontent.com/112873207/225322408-840309a9-ec38-410b-9325-2684dd7d45f8.png)
+
+![image](https://user-images.githubusercontent.com/112873207/225322644-acc1e8b0-9bf4-441b-9c6d-0beea2b19d85.png)
+
+![image](https://user-images.githubusercontent.com/112873207/225322708-cece2a40-5c97-41c2-99db-e00d8b47438c.png)
+
+Fixing that, let's try and run the program again.
+
+Boom! We have RCE. Now it's important to note here that most scripts will just tell you what arguments you need to provide, exploit developers will rarely make you read potentially hundreds of lines of codes just to figure out how to use the script.
+
+It is also worth noting that it may not always be this easy, sometimes you will just be given a version number like in this case, but other times you may need to dig through the HTML source, or even take a lucky guess on an exploit script, but realistically if it is a known vulnerability, there's probably a way to discover what version the application is running.
+
+# Severity 10 : Insufficient Logging and Monitoring
+
+When web applications are set up, every action performed by the user should be logged. Logging is important because in the event of an incident, the attackers actions can be traced. Once their actions are traced, their risk and impact can be determined. Without logging, there would be no way to tell what actions an attacker performed if they gain access to particular web applications. The bigger impacts of these include:
+
+- regulatory damage: if an attacker has gained access to personally identifiable user information and there is no record of this, not only are users of the application affected, but the application owners may be subject to fines or more severe actions depending on regulations.
+
+- risk of further attacks: without logging, the presence of an attacker may be undetected. This could allow an attacker to launch further attacks against web application owners by stealing credentials, attacking infrastructure and more.
+
+
+
+
+
+
+
+
+
 
 
 
