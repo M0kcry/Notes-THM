@@ -208,9 +208,37 @@ Alternatively, deserialisation is the reverse of this; converting serialised inf
 
 Simply, insecure deserialization occurs when data from an untrusted party (I.e. a hacker) gets executed because there is no filtering or input validation; the system assumes that the data is trustworthy and will execute it no holds barred.
 
+## Cookies
 
+Cookies are an essential tool for modern websites to function. Tiny pieces of data, these are created by a website and stored on the user's computer. 
 
+![image](https://user-images.githubusercontent.com/112873207/225304037-dc3fc71f-cc4e-4ff9-b007-e99d1aeb369f.png)
 
+![image](https://user-images.githubusercontent.com/112873207/225304144-13f38fa2-e6b6-452f-85b0-45154abc358b.png)
+
+### Creating cookies
+
+Cookies can be set in various website programming languages. For example, Javascript, PHP or Python to name a few. The following web application is developed using Python's Flask, so it is fitting to use it as an example.
+
+![image](https://user-images.githubusercontent.com/112873207/225304449-ceb9caa1-b6c7-48a7-8085-980eb16a42c5.png)
+
+![image](https://user-images.githubusercontent.com/112873207/225304983-bdcad25d-5ae0-4ff6-9035-df6c07d09a70.png)
+
+## Code Execution (Practical)
+
+See the room for the complete exercise.
+
+# Severity 9 : Components With Known Vulnerabilities
+
+## Intro
+
+Occasionally, you may find that the company/entity that you're pen-testing is using a program that already has a well documented vulnerability.
+
+For example, let's say that a company hasn't updated their version of WordPress for a few years, and using a tool such as wpscan, you find that it's version 4.6. Some quick research will reveal that WordPress 4.6 is vulnerable to an unauthenticated remote code execution(RCE) exploit, and even better you can find an exploit already made on exploit-db.
+
+As you can see this would be quite devastating, because it requires very little work on the part of the attacker as often times since the vulnerability is already well known, someone else has made an exploit for the vulnerability. The situation becomes even worse when you realize, that it's really quite easy for this to happen, if a company misses a single update for a program they use, they could be vulnerable to any number of attacks.
+
+Hence, why OWASP has rated this a 3(meaning high) on the prevalence scale, it is incredibly easy for a company to miss an update for an application.
 
 
 
