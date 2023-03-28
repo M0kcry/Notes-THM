@@ -28,6 +28,8 @@ The output of a hash function is normally raw bytes, which are then encoded. Com
 
 Hashing is used very often in cyber security. When you logged into TryHackMe, that used hashing to verify your password. When you logged into your computer, that also used hashing to verify your password. You interact indirectly with hashing more than you would think, mostly in the context of passwords.
 
+# What's a hash collision ?
+
 
 
 
