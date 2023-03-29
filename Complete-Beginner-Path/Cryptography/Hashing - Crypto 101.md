@@ -61,9 +61,35 @@ Hashing is used for 2 main purposes in Cyber Security. To verify integrity of da
 
 # Password cracking
 
+![image](https://user-images.githubusercontent.com/112873207/228505847-d51cc78d-2577-4fd0-92ae-51053622fd1e.png)
 
+## Why crack on GPU's ?
 
+![image](https://user-images.githubusercontent.com/112873207/228506025-880feef2-2404-4b3c-b7d8-6bf0d801a2e9.png)
 
+## Cracking on VM's ?
+
+![image](https://user-images.githubusercontent.com/112873207/228506556-2c16c07c-f476-40d7-917e-dbaa0278396d.png)
+
+# Hashing for integrity checking
+
+## Integrity checking
+
+Hashing can be used to check that files haven't been changed. If you put the same data in, you always get the same data out. If even a single bit changes, the hash will change a lot. 
+
+This means you can use it to check that files haven't been modified or to make sure that they have downloaded correctly. 
+
+You can also use hashing to find duplicate files, if two pictures have the same hash then they are the same picture.
+
+## HMAC's
+
+HMAC is a method of using a cryptographic hashing function to verify the authenticity and integrity of data. 
+
+The TryHackMe VPN uses HMAC-SHA512 for message authentication, which you can see in the terminal output. 
+
+A HMAC can be used to ensure that the person who created the HMAC is who they say they are (authenticity), and that the message hasn’t been modified or corrupted (integrity). 
+
+They use a secret key, and a hashing algorithm in order to produce a hash.
 
 
 
