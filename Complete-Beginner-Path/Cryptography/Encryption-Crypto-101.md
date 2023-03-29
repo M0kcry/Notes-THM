@@ -8,6 +8,12 @@ Here's a list of terms that are going to be used in this room :
 
 ![image](https://user-images.githubusercontent.com/112873207/228523748-74d8a752-65d9-4f3b-ac6c-d20f132d4ccf.png)
 
+# Why is encryption important ?
+
+![image](https://user-images.githubusercontent.com/112873207/228527539-d5603f20-36e9-4d5c-abad-388777434301.png)
+
+# Crucial crypto maths 
+
 
 
 
