@@ -53,6 +53,14 @@ Hashing is used for 2 main purposes in Cyber Security. To verify integrity of da
 
 # Recognising password hashes
 
+![image](https://user-images.githubusercontent.com/112873207/228504016-020e6968-374f-49bf-9ea3-3bf95c8d078a.png)
+
+![image](https://user-images.githubusercontent.com/112873207/228504100-69669edb-727e-45a5-9732-4dfef45f2ef7.png)
+
+![image](https://user-images.githubusercontent.com/112873207/228504213-7d0545ce-dd01-4bbc-9d8d-d9d5f2c32a0a.png)
+
+# Password cracking
+
 
 
 
