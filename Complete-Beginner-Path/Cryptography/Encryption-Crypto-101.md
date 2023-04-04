@@ -118,15 +118,81 @@ By default, SSH keys are RSA keys. You can choose which algorithm to generate, a
 
 `ssh-keygen` is the program used to generate pairs of keys most of the time.
 
+## SSH Private Keys
 
+You should treat your private SSH keys like passwords. Don’t share them, they’re called private keys for a reason. If someone has your private key, they can use it to log in to servers that will accept it unless the key is encrypted.
 
+It’s very important to mention that the passphrase to decrypt the key isn’t used to identify you to the server at all, all it does is decrypt the SSH key. The passphrase is never transmitted, and never leaves your system.
 
+Using tools like John the Ripper, you can attack an encrypted SSH key to attempt to find the passphrase, which highlights the importance of using a secure passphrase and keeping your private key private.
 
+When generating an SSH key to log in to a remote machine, you should generate the keys on your machine and then copy the public key over as this means the private key never exists on the target machine. For temporary keys generated for access to CTF boxes, this doesn't matter as much.
 
+## How do i use these keys ? 
 
+The ~/.ssh folder is the default place to store these keys for OpenSSH. 
 
+The authorized_keys (note the US English spelling) file in this directory holds public keys that are allowed to access the server if key authentication is enabled. 
 
+By default on many distros, key authentication is enabled as it is more secure than using a password to authenticate. Normally for the root user, only key authentication is enabled.
 
+In order to use a private SSH key, the permissions must be set up correctly otherwise your SSH client will ignore the file with a warning. 
+
+Only the owner should be able to read or write to the private key (600 or stricter). 
+
+`ssh -i keyNameGoesHere user@host` is how you specify a key for the standard Linux OpenSSH client.
+
+## Using a SSH key to get a better shell
+
+SSH keys are an excellent way to “upgrade” a reverse shell, assuming the user has login enabled (www-data normally does not, but regular users and root will). 
+
+Leaving an SSH key in authorized_keys on a box can be a useful backdoor, and you don't need to deal with any of the issues of unstabilised reverse shells like Control-C or lack of tab completion.
+
+# Explaining Diffie Hellman key exchange
+
+## What is Key Exchange?
+
+Key exchange allows 2 people/parties to establish a set of common cryptographic keys without an observer being able to get these keys. Generally, to establish common symmetric keys.
+
+## How does Diffie Hellman Key Exchange work?
+
+Alice and Bob want to talk securely. They want to establish a common key, so they can use symmetric cryptography, but they don’t want to use key exchange with asymmetric cryptography. This is where DH Key Exchange comes in.
+
+Alice and Bob both have secrets that they generate, let’s call these A and B. They also have some common material that’s public, let’s call this C.
+
+We need to make some assumptions. Firstly, whenever we combine secrets/material it’s impossible or very very difficult to separate. Secondly, the order that they're combined in doesn’t matter.
+
+Alice and Bob will combine their secrets with the common material, and form AC and BC. They will then send these to each other, and combine that with their secrets to form two identical keys, both ABC. Now they can use this key to communicate.
+
+## Extra Resources
+
+An excellent video if you want a visual explanation is available here. https://www.youtube.com/watch?v=NmM9HA2MQGI
+
+DH Key Exchange is often used alongside RSA public key cryptography, to prove the identity of the person you’re talking to with digital signing. This prevents someone from attacking the connection with a man-in-the-middle attack by pretending to be Bob.
+
+# PGP, GPG and AES
+
+## What is PGP ? 
+
+PGP stands for Pretty Good Privacy. It’s a software that implements encryption for encrypting files, performing digital signing and more.
+
+## What is GPG ?
+
+GnuPG or GPG is an Open Source implementation of PGP from the GNU project. You may need to use GPG to decrypt files in CTFs. With PGP/GPG, private keys can be protected with passphrases in a similar way to SSH private keys. If the key is passphrase protected, you can attempt to crack this passphrase using John The Ripper and gpg2john. The key provided in this task is not protected with a passphrase.
+
+The man page for GPG can be found online here : https://www.gnupg.org/gph/de/manual/r1023.html.
+
+## Now, AES ?
+
+AES, sometimes called Rijndael after its creators, stands for Advanced Encryption Standard. It was a replacement for DES which had short keys and other cryptographic flaws.
+
+AES and DES both operate on blocks of data (a block is a fixed size series of bits).
+
+AES is complicated to explain, and doesn’t seem to come up as often. If you’d like to learn how it works, here’s an excellent video from Computerphile https://www.youtube.com/watch?v=O4xNJsjtN6E
+
+# Current Recommandations 
+
+The NSA recommends **using RSA-3072 or better for asymmetric encryption and AES-256 or better for symmetric encryption**. There are several competitions currently running for quantum safe cryptographic algorithms, and it’s likely that we will have a new encryption standard before quantum computers become a threat to RSA and AES.
 
 
 
