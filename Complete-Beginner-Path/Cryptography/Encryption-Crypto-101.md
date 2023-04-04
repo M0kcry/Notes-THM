@@ -22,6 +22,8 @@ Explains here the modulo operation.
 
 `Asymmetric encryption` uses a pair of keys, one to encrypt and the other in the pair to decrypt. Examples are RSA and Elliptic Curve Cryptography. Normally these keys are referred to as a public key and a private key. Data encrypted with the private key can be decrypted with the public key, and vice versa. Your private key needs to be kept private, hence the name. Asymmetric encryption tends to be slower and uses larger keys, for example RSA typically uses 2048 to 4096 bit keys.
 
+https://www.youtube.com/watch?v=w0QbnxKRD0w
+
 
 
 
