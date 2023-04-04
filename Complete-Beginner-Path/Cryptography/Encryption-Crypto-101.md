@@ -24,8 +24,24 @@ Explains here the modulo operation.
 
 For a better understanding :  https://www.youtube.com/watch?v=w0QbnxKRD0w
 
+# RSA - Rivest Shamir Adleman
 
+## The maths side 
 
+RSA is based on the mathematically difficult problem of working out the factors of a large number. It’s very quick to multiply two prime numbers together, say 17x23 = 391, but it’s quite difficult to work out what two prime numbers multiply together to make 14351 (113x127 for reference).
 
+## The attacking side
+
+The maths behind RSA seems to come up relatively often in CTFs, normally requiring you to calculate variables or break some encryption based on them. The wikipedia page for RSA seems complicated at first, but will give you almost all of the information you need in order to complete challenges.
+
+There are some excellent tools for defeating RSA challenges in CTFs, and my personal favorite is https://github.com/Ganapati/RsaCtfTool
+
+The key variables that you need to know about for RSA in CTFs are p, q, m, n, e, d, and c.
+
+- “p” and “q” are large prime numbers, “n” is the product of p and q.
+
+- The public key is n and e, the private key is n and d.
+
+- “m” is used to represent the message (in plaintext) and “c” represents the ciphertext (encrypted text).
 
 
