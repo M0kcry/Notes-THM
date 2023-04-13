@@ -50,7 +50,17 @@ If not, use this : `sudo apt get seclists` to download the seclists repository.
 
 If you are not using any of the above distributions, you can get the rockyou.txt wordlist from the SecLists repository under the `/Passwords/Leaked-Databases` subsection. You may need to extract it from `.tar.gz` format, using `tar xvzf rockyou.txt.tar.gz`. 
 
+# Cracking basic hashes
 
+## John basic syntax
+
+The basic syntax of John the Ripper commands is as follows. We will cover the specific options and modifiers used as we use them.
+
+`john [options] [path to file]`
+
+`john` - Invokes the John the Ripper program
+
+`[path to file]` - The file containing the hash you're trying to crack, if it's in the same directory you won't need to name a path, just the file.
 
 
 
