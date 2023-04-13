@@ -44,7 +44,11 @@ As we explained in the first task, in order to dictionary attack hashes, you nee
 
 There are many different wordlists out there, a good collection to use can be found in the **SecLists** repository. There are a few places you can look for wordlists on your attacking system of choice, we will quickly run through where you can find them.
 
+Wordlists can be found here : `/usr/share/wordlists` directory.
 
+If not, use this : `sudo apt get seclists` to download the seclists repository.
+
+If you are not using any of the above distributions, you can get the rockyou.txt wordlist from the SecLists repository under the `/Passwords/Leaked-Databases` subsection. You may need to extract it from `.tar.gz` format, using `tar xvzf rockyou.txt.tar.gz`.
 
 
 
