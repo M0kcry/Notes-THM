@@ -78,6 +78,23 @@ To do this we use the following syntax:
 
 `john --wordlist=/usr/share/wordlists/rockyou.txt hash_to_crack.txt`
 
+## Identifying hashes
+
+Sometimes John won't play nicely with automatically recognising and loading hashes, that's okay! We're able to use other tools to identify the hash, and then set john to use a specific format. 
+
+There are multiple ways to do this, such as using an online hash identifier like this one : https://hashes.com/en/tools/hash_identifier. 
+
+I like to use a tool called hash-identifier, a Python tool that is super easy to use and will tell you what different types of hashes the one you enter is likely to be, giving you more options if the first one fails.
+
+To use hash-identifier, you can just pull the python file from gitlab using: `wget https://gitlab.com/kalilinux/packages/hash-identifier/-/raw/kali/master/hash-id.py`.
+
+Then simply launch it with `python3 hash-id.py` and then enter the hash you're trying to identify- and it will give you possible formats!
+
+
+
+
+
+
 
 
 
