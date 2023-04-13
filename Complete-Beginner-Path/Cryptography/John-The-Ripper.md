@@ -30,3 +30,20 @@ You can then compare these hashes to the one you're trying to crack, to see if a
 
 This process is called a dictionary attack and John the Ripper, or John as it's commonly shortened to, is a tool to allow you to conduct fast brute force attacks on a large array of different hash types.
 
+# Setting up John the Ripper (Kali/Parrot)
+
+If you're using Parrot OS, Kali Linux or TryHackMe's own AttackBox- you should already have Jumbo John installed. You can double check this by typing john into the terminal.
+
+You should be met with a usage guide for john, with the first line reading: "John the Ripper 1.9.0-jumbo-1" or similar with a different version number. If not, you can use `sudo apt install john` to install it.
+
+
+
+
+
+
+
+
+
+
+
+
