@@ -48,7 +48,7 @@ Wordlists can be found here : `/usr/share/wordlists` directory.
 
 If not, use this : `sudo apt get seclists` to download the seclists repository.
 
-If you are not using any of the above distributions, you can get the rockyou.txt wordlist from the SecLists repository under the `/Passwords/Leaked-Databases` subsection. You may need to extract it from `.tar.gz` format, using `tar xvzf rockyou.txt.tar.gz`.
+If you are not using any of the above distributions, you can get the rockyou.txt wordlist from the SecLists repository under the `/Passwords/Leaked-Databases` subsection. You may need to extract it from `.tar.gz` format, using `tar xvzf rockyou.txt.tar.gz`. 
 
 
 
