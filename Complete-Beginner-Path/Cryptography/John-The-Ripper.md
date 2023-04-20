@@ -214,7 +214,7 @@ If you're cracking hashes in single crack mode, you need to change the file form
 
 mike:1efee03cdcb96d90ad48ccc7b8666033
 
-# Single Crack Mode
+
 
 
 
