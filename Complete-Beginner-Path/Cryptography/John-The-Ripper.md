@@ -214,6 +214,41 @@ If you're cracking hashes in single crack mode, you need to change the file form
 
 mike:1efee03cdcb96d90ad48ccc7b8666033
 
+# Custom Rules
+
+
+As we journeyed through our exploration of what John can do in Single Crack Mode- you may have some ideas about what some good mangling patterns would be, or what patterns your passwords often use- that could be replicated with a certain mangling pattern.
+
+The good news is you can define your own sets of rules, which John will use to dynamically create passwords. This is especially useful when you know more information about the password structure of whatever your target is. 
+
+## Common custom rules
+
+Many organisations will require a certain level of password complexity to try and combat dictionary attacks, meaning that if you create an account somewhere, go to create a password and enter: 
+
+polopassword
+
+You may receive a prompt telling you that passwords have to contain at least one of the following:
+
+    - Capital letter
+    - Number
+    - Symbol
+
+This is good! However, we can exploit the fact that most users will be predictable in the location of these symbols. For the above criteria, many users will use something like the following:
+
+Polopassword1!
+
+A password with the capital letter first, and a number followed by a symbol at the end. This pattern of the familiar password, appended and prepended by modifiers (such as the capital letter or symbols) is a memorable pattern that people will use, and reuse when they create passwords. 
+
+This pattern can let us exploit password complexity predictability.
+
+Now this does meet the password complexity requirements, however as an attacker we can exploit the fact we know the likely position of these added elements to create dynamic passwords from our wordlists.
+
+## How to create custom rules
+
+Custom rules are defined in the `john.conf`  file, usually located in `/etc/john/john.conf` if you have installed John using a package manager or built from source with make and in `/opt/john/john.conf` on the TryHackMe Attackbox.
+
+
+
 
 
 
