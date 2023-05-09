@@ -312,4 +312,77 @@ Jumbo John already comes with a large list of custom rules, which contain modifi
 
 # Cracking password protected zip file
 
+Yes! You read that right. We can use John to crack the password on password protected Zip files. 
+
+Again, we're going to be using a separate part of the john suite of tools to convert the zip file into a format that John will understand, but for all intents and purposes, we're going to be using the syntax that you're already pretty familiar with by now. 
+
+## Zip2John
+
+Similarly to the unshadow tool that we used previously, we're going to be using the zip2john tool to convert the zip file into a hash format that John is able to understand, and hopefully crack. The basic usage is like this:
+
+`zip2john [options] [zip file] > [output file]`
+
+`[options]` - Allows you to pass specific checksum options to zip2john, this shouldn't often be necessary
+
+`[zip file]` - The path to the zip file you wish to get the hash of
+
+`>` - This is the output director, we're using this to send the output from this file to the...
+
+[output file] - This is the file that will store the output from
+
+Example Usage
+
+zip2john zipfile.zip > zip_hash.txt
+
+## Cracking
+
+We're then able to take the file we output from zip2john in our example use case called "zip_hash.txt" and, as we did with unshadow, feed it directly into John as we have made the input specifically for it.
+
+`john --wordlist=/usr/share/wordlists/rockyou.txt zip_hash.txt`
+
+**This is exactly the same for RAR files except that we will replace "zip" by "rar"**
+
+# For ssh keys (id_rsa)
+
+Okay, okay I hear you, no more file archives! Fine! Let's explore one more use of John that comes up semi-frequently in CTF challenges. 
+
+Using John to crack the SSH private key password of id_rsa files. Unless configured otherwise, you authenticate your SSH login using a password. 
+
+However, you can configure key-based authentication, which lets you use your private key, id_rsa, as an authentication key to login to a remote machine over SSH. 
+
+However, doing so will often require a password- here we will be using John to crack this password to allow authentication over SSH using the key. 
+
+## Ssh2john
+
+Who could have guessed it, another conversion tool? Well, that's what working with John is all about. As the name suggests ssh2john converts the id_rsa private key that you use to login to the SSH session into hash format that john can work with. Jokes aside, it's another beautiful example of John's versatility. The syntax is about what you'd expect. Note that if you don't have ssh2john installed, you can use ssh2john.py, which is located in the /opt/john/ssh2john.py. If you're doing this, replace the ssh2john command with python3 /opt/ssh2john.py or on Kali, python /usr/share/john/ssh2john.py.
+
+`ssh2john [id_rsa private key file] > [output file]`
+
+ssh2john - Invokes the ssh2john tool
+
+`[id_rsa private key file]` - The path to the id_rsa file you wish to get the hash of
+
+`>` - This is the output director, we're using this to send the output from this file to the...
+`[output file]` - This is the file that will store the output from
+
+
+Example Usage
+
+ssh2john id_rsa > id_rsa_hash.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
